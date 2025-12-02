@@ -14,8 +14,12 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const body = context.payload.issue.body.toLowerCase();
-            const hasLog = body.includes("mclo.gs");
+            const body = (context.payload.issue.body || "").toLowerCase();
+
+            // Match actual mclo.gs URLs, not just the text
+            const logRegex = /https?:\/\/(?:www\.)?mclo\.gs\/\S+/i;
+            const hasLog = logRegex.test(body);
+
             core.setOutput("hasLog", hasLog);
 
       - name: Label, comment, and close if missing logs
@@ -24,24 +28,33 @@ jobs:
         with:
           script: |
             const issue_number = context.payload.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
 
             await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+              owner,
+              repo,
               issue_number,
               labels: ["missing logs"]
             });
 
             await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+              owner,
+              repo,
               issue_number,
-              body: "This issue has been automatically closed because it does not contain a required mclo.gs log link. Please upload your latest.log or crash report using https://mclo.gs/ and open a new issue once you have the logs."
+              body: [
+                "🚫 **Your issue was automatically closed because it does not contain a required mclo.gs log link.**",
+                "",
+                "Please upload your `latest.log` or crash report via:",
+                "➡ https://mclo.gs/",
+                "",
+                "Then open a **new issue** with the generated link included.",
+              ].join("\n")
             });
 
             await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+              owner,
+              repo,
               issue_number,
               state: "closed"
             });
