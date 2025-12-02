@@ -8,7 +8,7 @@ assignees: jflec
 ---
 
 **Modpack Version**
-Please provide the exact version you're using (e.g., 1.0.6).
+You can find the modpack version in the title bar of the Minecraft window.
 
 **Describe the Bug**
 Give a clear and concise description of the issue. Include steps to reproduce it, expected behavior, and what actually happens.
