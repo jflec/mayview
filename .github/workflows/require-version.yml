@@ -1,0 +1,78 @@
+name: Require Version Number
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check_version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check for version number in title
+        id: check
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const title = context.payload.issue.title || "";
+
+            // Regex: matches X.Y.Z (only digits)
+            const versionRegex = /\b\d+\.\d+\.\d+\b/;
+            const hasVersion = versionRegex.test(title);
+
+            core.setOutput("hasVersion", hasVersion);
+
+      - name: Handle missing version
+        if: steps.check.outputs.hasVersion == 'false'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue_number = context.payload.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Remove all existing labels
+            const { data: labels } = await github.rest.issues.listLabelsOnIssue({
+              owner,
+              repo,
+              issue_number
+            });
+
+            for (const label of labels) {
+              await github.rest.issues.removeLabel({
+                owner,
+                repo,
+                issue_number,
+                name: label.name
+              }).catch(() => {});
+            }
+
+            // Add missing version label
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number,
+              labels: ["missing version"]
+            });
+
+            // Comment
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: [
+                "🚫 **This issue has been closed because it does not contain a valid version number.**",
+                "",
+                "Please include the modpack version in the issue title in the format `X.Y.Z` (for example: `1.0.6`).",
+                "",
+                "Once corrected, feel free to open a new issue."
+              ].join("\n")
+            });
+
+            // Close issue
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number,
+              state: "closed"
+            });
