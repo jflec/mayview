@@ -16,13 +16,13 @@ jobs:
           script: |
             const body = (context.payload.issue.body || "").toLowerCase();
 
-            // Match actual mclo.gs URLs, not just the text
+            // Match actual mclo.gs URLs
             const logRegex = /https?:\/\/(?:www\.)?mclo\.gs\/\S+/i;
             const hasLog = logRegex.test(body);
 
             core.setOutput("hasLog", hasLog);
 
-      - name: Label, comment, and close if missing logs
+      - name: Remove all labels and apply missing logs
         if: steps.check.outputs.hasLog == 'false'
         uses: actions/github-script@v6
         with:
@@ -31,12 +31,39 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
+            // Get all existing labels
+            const { data: labels } = await github.rest.issues.listLabelsOnIssue({
+              owner,
+              repo,
+              issue_number,
+            });
+
+            // Remove each label
+            for (const label of labels) {
+              await github.rest.issues.removeLabel({
+                owner,
+                repo,
+                issue_number,
+                name: label.name
+              }).catch(() => {}); // ignore errors (e.g., race conditions)
+            }
+
+            // Add the missing logs label
             await github.rest.issues.addLabels({
               owner,
               repo,
               issue_number,
               labels: ["missing logs"]
             });
+
+      - name: Comment and close
+        if: steps.check.outputs.hasLog == 'false'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue_number = context.payload.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
 
             await github.rest.issues.createComment({
               owner,
@@ -48,7 +75,7 @@ jobs:
                 "Please upload your `latest.log` or crash report via:",
                 "➡ https://mclo.gs/",
                 "",
-                "Then open a **new issue** with the generated link included.",
+                "Then open a **new issue** with the generated link included."
               ].join("\n")
             });
 
