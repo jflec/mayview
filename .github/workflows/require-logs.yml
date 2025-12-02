@@ -16,7 +16,7 @@ jobs:
           script: |
             const body = context.payload.issue.body.toLowerCase();
             const hasLog = body.includes("mclo.gs");
-            return { hasLog };
+            core.setOutput("hasLog", hasLog);
 
       - name: Label, comment, and close if missing logs
         if: steps.check.outputs.hasLog == 'false'
@@ -36,7 +36,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number,
-              body: "This issue has been automatically closed because it does not contain a required mclo.gs log link. Please upload your latest.log or crash report using https://mclo.gs/ and open a new issue."
+              body: "This issue has been automatically closed because it does not contain a required mclo.gs log link. Please upload your latest.log or crash report using https://mclo.gs/ and open a new issue once you have the logs."
             });
 
             await github.rest.issues.update({
