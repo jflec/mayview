@@ -9,16 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check for version number in title
+      - name: Check for version number in body
         id: check
         uses: actions/github-script@v6
         with:
           script: |
-            const title = context.payload.issue.title || "";
+            const body = context.payload.issue.body || "";
 
-            // Regex: matches X.Y.Z (only digits)
+            // Match X.Y.Z (digits only)
             const versionRegex = /\b\d+\.\d+\.\d+\b/;
-            const hasVersion = versionRegex.test(title);
+            const hasVersion = versionRegex.test(body);
 
             core.setOutput("hasVersion", hasVersion);
 
@@ -31,7 +31,7 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
-            // Remove all existing labels
+            // Remove all labels
             const { data: labels } = await github.rest.issues.listLabelsOnIssue({
               owner,
               repo,
@@ -61,9 +61,9 @@ jobs:
               repo,
               issue_number,
               body: [
-                "🚫 **This issue has been closed because it does not contain a valid version number.**",
+                "🚫 **This issue has been closed because it does not include a valid modpack version number.**",
                 "",
-                "Please include the modpack version in the issue title in the format `X.Y.Z` (for example: `1.0.6`).",
+                "Please include the version in the issue body in the format `X.Y.Z` (for example: `1.0.6`).",
                 "",
                 "Once corrected, feel free to open a new issue."
               ].join("\n")
