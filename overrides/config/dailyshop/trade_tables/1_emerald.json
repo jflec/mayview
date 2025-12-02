@@ -1,0 +1,25 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:copper_coin",
+    "count": {
+      "type": "constant",
+      "count": 4
+    }
+  },
+  "output": [
+    {
+      "item": "exposure:lightroom",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "chimes:bamboo_chimes",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

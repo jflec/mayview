@@ -1,0 +1,138 @@
+{
+  // -----------------------------------------------------------
+  //              Item Obliterator by ElocinDev
+  // -----------------------------------------------------------
+  //  
+  // How to add items?
+  //   - They are json strings, so you need to separate each
+  //     entry with a comma, except the last
+  //   - If you start an entry with !, it will be treated as a regular expression
+  //     Example: "!minecraft:.*_sword" to disable all swords
+  //  
+  // -----------------------------------------------------------
+  // Do not touch this
+  "configVersion": 2,
+  // -----------------------------------------------------------
+  // Items here will be unusable completely
+  //    Example: minecraft:diamond
+  "blacklisted_items": [
+    "ae2:fluix_sword",
+    "ae2:fluix_pickaxe",
+    "ae2:fluix_axe",
+    "ae2:fluix_shovel",
+    "ae2:fluix_hoe",
+
+    "ae2:fluix_upgrade_smithing_template",
+
+    "ae2:nether_quartz_sword",
+    "ae2:nether_quartz_pickaxe",
+    "ae2:nether_quartz_axe",
+    "ae2:nether_quartz_shovel",
+    "ae2:nether_quartz_hoe",
+    "ae2:nether_quartz_cutting_knife",
+
+    "ae2:certus_quartz_sword",
+    "ae2:certus_quartz_pickaxe",
+    "ae2:certus_quartz_axe",
+    "ae2:certus_quartz_shovel",
+    "ae2:certus_quartz_hoe",
+    "ae2:certus_quartz_cutting_knife",
+
+    "ae2:entropy_manipulator",
+    "ae2:charged_staff",
+
+    "ae2:singularity",
+    "ae2:quantum_entangled_singularity",
+
+    "ae2:spatial_cell_component_2",
+    "ae2:spatial_cell_component_16",
+    "ae2:spatial_cell_component_128",
+
+    "ae2:spatial_storage_cell_2",
+    "ae2:spatial_storage_cell_16",
+    "ae2:spatial_storage_cell_128",
+
+    "ae2:spatial_pylon",
+    "ae2:spatial_io_port",
+
+    "ae2:meteorite_compass",
+
+    "ae2:tiny_tnt",
+
+    "ae2:spatial_anchor",
+    "ae2:molecular_assembler",
+    "ae2:pattern_provider",
+    "ae2:crafting_monitor",
+    "ae2:256k_crafting_storage",
+    "ae2:64k_crafting_storage",
+    "ae2:16k_crafting_storage",
+    "ae2:4k_crafting_storage",
+    "ae2:1k_crafting_storage",
+    "ae2:crafting_accelerator",
+    "ae2:crafting_unit",
+    "ae2:vibration_chamber",
+    "ae2:io_port",
+    "ae2:interface",
+    "ae2:spatial_io_port",
+    "ae2:spatial_pylon",
+    "ae2:light_p2p_tunnel",
+    "ae2:fe_p2p_tunnel",
+    "ae2:fluid_p2p_tunnel",
+    "ae2:item_p2p_tunnel",
+    "ae2:redstone_p2p_tunnel",
+    "ae2:me_p2p_tunnel",
+    "ae2:pattern_access_terminal",
+    "ae2:cable_interface",
+    "ae2:cable_pattern_provider",
+    "ae2:pattern_encoding_terminal",
+    "ae2:formation_plane",
+    "ae2:annihilation_plane",
+    "ae2:storage_bus",
+    "ae2:spatial_storage_cell_128",
+    "ae2:spatial_storage_cell_16",
+    "ae2:spatial_storage_cell_2",
+    "ae2:spatial_cell_component_128",
+    "ae2:spatial_cell_component_16",
+    "ae2:spatial_cell_component_2",
+    "ae2:crafting_card",
+    "ae2:blank_pattern",
+    "ae2wtlib:magnet_card",
+    "ae2wtlib:wireless_universal_terminal",
+    "ae2wtlib:wireless_pattern_access_terminal",
+    "ae2wtlib:wireless_pattern_encoding_terminal"
+  ],
+  // -----------------------------------------------------------
+  // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
+  // Use with caution! This is a very expensive operation and can cause lag if you have a lot of items blacklisted.
+  // 	
+  // 	 Example to disable a regeneration potion: Potion:"minecraft:regeneration"
+  // 	
+  // 	 You can also use regular expressions by starting the value with !
+  "blacklisted_nbt": [],
+  // -----------------------------------------------------------
+  // Items here will not be able to be right-clicked (Interact)
+  //    Example: minecraft:apple
+  "only_disable_interactions": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will not be able to be used to attack
+  //    Example: minecraft:diamond_sword
+  "only_disable_attacks": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // Items here will get their recipes disabled
+  // Keep in mind this already is applied to blacklisted items
+  "only_disable_recipes": [
+    "examplemod:example_item"
+  ],
+  // -----------------------------------------------------------
+  // If true, the mod will use a hashset to handle the blacklisted items
+  // This is a more optimized approach only if you have a lot of items blacklisted (20 or more is recommended)
+  // If you just have a small amount of items blacklisted, keep this false
+  //  
+  // [!] Enabling this will disable all regular expressions
+  // [!] Does not apply to NBT, only item blacklist / interaction / attack
+  "use_hashmap_optimizations": true
+}

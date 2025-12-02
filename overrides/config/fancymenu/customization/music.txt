@@ -1,0 +1,75 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1748949116265
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:256dcde1-a49c-425a-8df0-53a6d50d2731-1752068718566] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
+}
+
+element {
+  audio_instance_0 = [source:local]/config/fancymenu/assets/mayview.ogg
+  audio_instance_weight_0 = 1.0
+  play_mode = normal
+  looping = true
+  volume = 1.0
+  sound_source = music
+  element_type = audio_v2
+  instance_identifier = 418f5ad9-07d5-453f-987b-67c48145b6f7-1748842069539
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2559
+  auto_sizing_base_screen_height = 1362
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = -50
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 8f2cd760-18f5-45fb-843d-d3913df1f3bd-1748842069539
+  [loading_requirement_container_meta:8f2cd760-18f5-45fb-843d-d3913df1f3bd-1748842069539] = [groups:][instances:4b59214f-7907-45d0-855a-ff867dc87090-1748842295248;a23af171-dbc2-43f6-bf71-b84e4f9b5903-1748842331296;]
+  [loading_requirement:fancymenu_visibility_requirement_is_survival][requirement_mode:if_not][req_id:4b59214f-7907-45d0-855a-ff867dc87090-1748842295248] = 
+  [loading_requirement:fancymenu_loading_requirement_is_singpleplayer][requirement_mode:if_not][req_id:a23af171-dbc2-43f6-bf71-b84e4f9b5903-1748842331296] = 
+  enable_parallax = false
+  parallax_intensity = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #5CA6EFFF
+  layer_hidden_in_editor = false
+}
+

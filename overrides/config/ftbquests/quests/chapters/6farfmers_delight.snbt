@@ -1,0 +1,279 @@
+{
+	autofocus_id: "18EDBF69070174E4"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6farfmers_delight"
+	group: "1159A57A6FCB1D1E"
+	icon: {
+		id: "farmersdelight:smoked_ham"
+	}
+	id: "6E8FD638D9F526C9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "18EDBF69070174E4"
+			size: 1.5d
+			tasks: [{
+				advancement: "farmersdelight:main/root"
+				criterion: ""
+				id: "1EE85BDF861F8F10"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18EDBF69070174E4"]
+			id: "6CE0C66F2D381FA3"
+			tasks: [{
+				advancement: "farmersdelight:main/craft_knife"
+				criterion: ""
+				id: "5E7C3EBBD4118A4A"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CE0C66F2D381FA3"]
+			id: "482AD3682F99A489"
+			tasks: [{
+				advancement: "farmersdelight:main/use_cutting_board"
+				criterion: ""
+				id: "1FCF963D34EEF3BC"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6CE0C66F2D381FA3"]
+			id: "6449B7B55948281E"
+			tasks: [{
+				advancement: "farmersdelight:main/harvest_straw"
+				criterion: ""
+				id: "0684E3941C86025B"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6449B7B55948281E"]
+			id: "3BAD79DEC7D6CAB9"
+			tasks: [{
+				advancement: "farmersdelight:main/place_organic_compost"
+				criterion: ""
+				id: "648188CCE86C8734"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BAD79DEC7D6CAB9"]
+			id: "5CA9DA4A3BB7FF88"
+			tasks: [{
+				advancement: "farmersdelight:main/get_rich_soil"
+				criterion: ""
+				id: "77EE1BD4C21EF25C"
+				type: "advancement"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CE0C66F2D381FA3"]
+			id: "2575C318CC3C4FF2"
+			tasks: [{
+				advancement: "farmersdelight:main/get_ham"
+				criterion: ""
+				id: "184A4E70307FD519"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["18EDBF69070174E4"]
+			id: "703F09791ECEEFEB"
+			tasks: [{
+				advancement: "farmersdelight:main/get_fd_seed"
+				criterion: ""
+				id: "1C069E224046B2ED"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["703F09791ECEEFEB"]
+			id: "195ECD91456C6069"
+			tasks: [{
+				advancement: "farmersdelight:main/plant_rice"
+				criterion: ""
+				id: "5AFE0DD4573E198C"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["195ECD91456C6069"]
+			id: "1A343497123FE56A"
+			tasks: [{
+				advancement: "farmersdelight:main/plant_all_crops"
+				criterion: ""
+				id: "76D78ABF783411AE"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["703F09791ECEEFEB"]
+			id: "559A03FA319714E9"
+			tasks: [{
+				advancement: "farmersdelight:main/get_mushroom_colony"
+				criterion: ""
+				id: "518A0F5A10BBC7EE"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["703F09791ECEEFEB"]
+			id: "443C75511B54A439"
+			tasks: [{
+				advancement: "farmersdelight:main/harvest_ropelogged_tomato"
+				criterion: ""
+				id: "7E9C0C0F63E7783D"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["443C75511B54A439"]
+			id: "1AD263AFBF359274"
+			tasks: [{
+				advancement: "farmersdelight:main/hit_raider_with_rotten_tomato"
+				criterion: ""
+				id: "1B41BFEC88ECD30B"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A2CAFA7239A473C"]
+			id: "74A7436547E41CF1"
+			tasks: [{
+				advancement: "farmersdelight:main/use_skillet"
+				criterion: ""
+				id: "369A84401702C67E"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["74A7436547E41CF1"]
+			id: "7FAB8BFAADECB37E"
+			tasks: [{
+				advancement: "farmersdelight:main/place_skillet"
+				criterion: ""
+				id: "2859184F66B6AE3D"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["18EDBF69070174E4"]
+			id: "0A2CAFA7239A473C"
+			tasks: [{
+				advancement: "farmersdelight:main/place_campfire"
+				criterion: ""
+				id: "2B6785E0E43826A8"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0A2CAFA7239A473C"]
+			id: "11177DCAF6B537AD"
+			tasks: [{
+				advancement: "farmersdelight:main/place_cooking_pot"
+				criterion: ""
+				id: "78152001CCB76298"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["11177DCAF6B537AD"]
+			id: "77917BE88440FA00"
+			tasks: [{
+				advancement: "farmersdelight:main/eat_comfort_food"
+				criterion: ""
+				id: "4FA78C576E1E5E61"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["77917BE88440FA00"]
+			id: "5E2F44ACAECE0380"
+			tasks: [{
+				advancement: "farmersdelight:main/eat_nourishing_food"
+				criterion: ""
+				id: "3C16C39D1901D9A2"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E2F44ACAECE0380"]
+			id: "4337BC5A29CF594E"
+			tasks: [{
+				advancement: "farmersdelight:main/place_feast"
+				criterion: ""
+				id: "1CB9EF13563B42A9"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4337BC5A29CF594E"]
+			id: "77F5C1694098F04F"
+			tasks: [{
+				advancement: "farmersdelight:main/master_chef"
+				criterion: ""
+				id: "7AEB9E9BE9C04BF6"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["482AD3682F99A489"]
+			id: "07BBF798F16E7867"
+			tasks: [{
+				advancement: "farmersdelight:main/obtain_netherite_knife"
+				criterion: ""
+				id: "38DBDB3D60DB4E58"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+	]
+}

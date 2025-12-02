@@ -1,0 +1,24 @@
+#Cook House Plains
+# Default: 4
+# Range: 0 ~ 100
+cookHousePlains = 4
+#Chef House Plains
+# Default: 3
+# Range: 0 ~ 100
+chefHousePlains = 3
+#Cook House Desert
+# Default: 3
+# Range: 0 ~ 100
+cookHouseDesert = 3
+#Chef House Desert
+# Default: 10
+# Range: 0 ~ 100
+chefHouseDesert = 10
+#Cook House Taiga
+# Default: 4
+# Range: 0 ~ 100
+cookHouseTaiga = 4
+#Chef House Taiga
+# Default: 4
+# Range: 0 ~ 100
+chefHouseTaiga = 4

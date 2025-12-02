@@ -1,0 +1,17 @@
+{
+  "sizeModificationChance": 0.5,
+  "preventShoulderMountSize": 1.5,
+  "preventRidingMinSize": 0.3,
+  "preventRidingMaxSize": 1.8,
+  "permissions": [
+    {
+      "cobblemonsizevariation.command.pokesizer": 2
+    },
+    {
+      "cobblemonsizevariation.command.pokesizer.self": 2
+    }
+  ],
+  "sizingAlgorithm": "basic",
+  "biasSizeTowardAverage": false,
+  "enableEssenceRecipes": false
+}

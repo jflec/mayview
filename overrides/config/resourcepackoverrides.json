@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+
+  "default_packs": [
+    "vanilla",
+    "fabric",
+    "mod_resources",
+    "betterbeds:fancyconnectedbeds",
+    "file/Whimscape_1.20.2-1.21.10_r1.zip",
+    "file/Icon Fresh 1.3.zip",
+    "file/E19 Cobblemon Minimap Icons.zip",
+    "mod/cobblemon:resourcepacks/regionbiasforms",
+    "mod/mega_showdown:resourcepacks/regionbiasmsd",
+    "file/FreshAnimations_v1.10.2.zip",
+    "file/FA+All_Extensions-v1.6.zip",
+    "file/Mayview Resources 1.0.2.zip",
+    "file/Whimscape x Cobblemon v1.7.zip",
+    "file/Whimscape BiomesWeveGone.zip",
+    "file/SimplySwordsWhimscape_v1.1.zip",
+    "file/Whimscape x Exploration v2.1.zip",
+    "file/Whimscape x Sophisticated.zip",
+    "file/file/AllTheMons R3.0.zip",
+    "file/Serified Font v1.2.zip"
+  ],
+
+  "default_overrides": {
+    "force_compatible": true
+  },
+
+  "pack_overrides": {
+    "high_contrast": { "hidden": true },
+    "mod_resources": { "hidden": true },
+    "fabric": { "hidden": true },
+    "vanilla": { "hidden": true },
+    "programmer_art": { "hidden": true },
+    "classic_icons": { "hidden": true },
+    "white_icons": { "hidden": true },
+    "black_icons": { "hidden": true },
+    "mod/cobblemon:resourcepacks/gyaradosjump": { "hidden": true },
+    "mod/cobblemon:resourcepacks/uniqueshinyforms": { "hidden": true },
+    "mod/lootr:resourcepacks/old_textures": { "hidden": true },
+    "mod/mega_showdown:resourcepacks/gyaradosjumpingmega": { "hidden": true },
+    "vinery:bushy_leaves": { "hidden": true }
+  }
+}

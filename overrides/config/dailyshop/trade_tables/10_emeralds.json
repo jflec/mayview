@@ -1,0 +1,30 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:iron_coin",
+    "count": {
+      "type": "constant",
+      "count": 10
+    }
+  },
+  "output": [
+    {
+      "item": "exposure:color_film",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "create:electron_tube",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "create:precision_mechanism",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

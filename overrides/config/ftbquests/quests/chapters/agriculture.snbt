@@ -1,0 +1,151 @@
+{
+	autofocus_id: "4EEFF7B6B6648452"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "agriculture"
+	group: ""
+	id: "43029BA179B5EEC0"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4EEFF7B6B6648452"
+			tasks: [{
+				id: "09B278998FC0363D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "58C3A316E8FD410E"
+			tasks: [{
+				id: "7E36D16D6FBFB304"
+				item: { count: 1, id: "minecraft:wheat_seeds" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["58C3A316E8FD410E"]
+			id: "6EC25D050D7215D2"
+			tasks: [{
+				id: "2D7029F3598881DB"
+				item: { count: 1, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["23941B47BAAA928A"]
+			id: "59D58F9A5D1B875C"
+			tasks: [{
+				id: "7B7329C35A337316"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6EC25D050D7215D2"]
+			id: "23941B47BAAA928A"
+			tasks: [{
+				id: "088B0D671140015E"
+				item: { count: 1, id: "farmersdelight:wheat_dough" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["23941B47BAAA928A"]
+			id: "463CC9E92B50D8CE"
+			tasks: [{
+				id: "6F845C8E70526913"
+				item: { count: 1, id: "brewinandchewin:pizza" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6EC25D050D7215D2"]
+			id: "34FA2DF96C89F68C"
+			tasks: [{
+				id: "21522BCC92DAE1A9"
+				item: { count: 1, id: "ubesdelight:lumpia_wrapper" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59D58F9A5D1B875C"]
+			id: "04EF8B4933845B1F"
+			tasks: [{
+				id: "6FC6F0881BB849E3"
+				item: { count: 1, id: "brewinandchewin:ham_and_cheese_sandwich" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6EC25D050D7215D2"]
+			id: "340DE22C0F9DE6B8"
+			tasks: [{
+				id: "241A725E613D860B"
+				item: { count: 1, id: "minecraft:cookie" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			id: "517B2148F2FC18C7"
+			tasks: [{
+				id: "4453E9941ED2FF12"
+				item: { count: 1, id: "farmersdelight:rice" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["517B2148F2FC18C7"]
+			id: "5DD608A8A66B0F5D"
+			tasks: [{
+				id: "6AA8D1ECEB03163C"
+				item: { count: 1, id: "farmersdelight:cooked_rice" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DD608A8A66B0F5D"]
+			id: "44F29334AE5310A5"
+			tasks: [{
+				id: "690B4FBE0EB59748"
+				item: { count: 1, id: "farmersdelight:salmon_roll" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DD608A8A66B0F5D"]
+			id: "0DFB087D7C040729"
+			tasks: [{
+				id: "305B039584000D36"
+				item: { count: 1, id: "farmersdelight:roasted_mutton_chops" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+	]
+}

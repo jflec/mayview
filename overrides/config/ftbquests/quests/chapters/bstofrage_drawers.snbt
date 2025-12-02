@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bstofrage_drawers"
+	group: "1391A5B01441C2B0"
+	id: "28C90797D60321DB"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}

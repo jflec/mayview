@@ -1,0 +1,18 @@
+{
+  "teraShardRequired": 50,
+  "multipleMegas": false,
+  "showdownFilesLoading": true,
+  "mega": true,
+  "zMoves": true,
+  "teralization": true,
+  "dynamax": true,
+  "powerSpotRange": 20,
+  "dynamaxAnywhere": false,
+  "dynamaxScaleFactor": 4.0,
+  "teraShardDropRate": 10.0,
+  "stellarShardDropRate": 1.0,
+  "likoPendentDuration": 72000,
+  "minBondingRequired": 200,
+  "outSideMega": true,
+  "outSideUltraBurst": false
+}

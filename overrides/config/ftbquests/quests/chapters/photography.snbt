@@ -1,0 +1,370 @@
+{
+	autofocus_id: "1E63AB6DF723500E"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "photography"
+	group: ""
+	id: "630478462301384A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["076F0B67237FAD54"]
+			id: "5874413FBDDE2AC1"
+			tasks: [{
+				icon: {
+					id: "ribbits:swamp_daisy"
+				}
+				id: "478685365760299A"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2DDE3DB9837389A1"]
+			id: "3FB93E2BFE62D0F8"
+			tasks: [{
+				icon: {
+					id: "minecraft:villager_spawn_egg"
+				}
+				id: "2788BE33011CB15E"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6C223A15828BD608"]
+			id: "025DE646E78F585B"
+			tasks: [{
+				icon: {
+					id: "cobblemon:dragon_gem"
+				}
+				id: "0EB96F1972538687"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["6C223A15828BD608"]
+			id: "2D938394EDC810D6"
+			tasks: [{
+				icon: {
+					id: "minecraft:wither_rose"
+				}
+				id: "5BC8947747BF0FDC"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["3FB93E2BFE62D0F8"]
+			id: "1DD5C356333EE0F8"
+			tasks: [{
+				icon: {
+					id: "minecraft:warden_spawn_egg"
+				}
+				id: "4A9B2E5A2ECC4773"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["3358F20C6F1230D8"]
+			id: "076F0B67237FAD54"
+			tasks: [{
+				icon: {
+					id: "simplehats:raincloud"
+				}
+				id: "25D61A098983CDEB"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["01E41E192704C784"]
+			id: "3358F20C6F1230D8"
+			tasks: [{
+				icon: {
+					id: "minecraft:bee_spawn_egg"
+				}
+				id: "3332C05A1ED6BC57"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3FB93E2BFE62D0F8"]
+			id: "6C223A15828BD608"
+			tasks: [{
+				icon: {
+					id: "minecraft:enderman_spawn_egg"
+				}
+				id: "0625305D32079577"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["39A837209DEB73E3"]
+			id: "78CDC247D47F1399"
+			tasks: [{
+				icon: {
+					id: "minecraft:iron_golem_spawn_egg"
+				}
+				id: "0ADD7E78DC1F190E"
+				type: "custom"
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6BA76324A48CF929"]
+			id: "7421B16C7DA32D20"
+			tasks: [{
+				icon: {
+					id: "minecraft:dark_oak_sapling"
+				}
+				id: "0B3C09F7148BFCBE"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3358F20C6F1230D8"]
+			id: "24E338F06CC85478"
+			tasks: [{
+				icon: {
+					id: "minecraft:sunflower"
+				}
+				id: "1DACCB5D5C795EC7"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2DDE3DB9837389A1"]
+			id: "15B7AF4DF1C30B14"
+			tasks: [{
+				icon: {
+					id: "minecraft:phantom_spawn_egg"
+				}
+				id: "6D5A28093BF8B7E0"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3358F20C6F1230D8"]
+			id: "6BA76324A48CF929"
+			tasks: [{
+				icon: {
+					id: "minecraft:polar_bear_spawn_egg"
+				}
+				id: "743390726AAAACDB"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["61BC1B6A2524CBE7"]
+			id: "3B5B80FC07FF0300"
+			tasks: [{
+				icon: {
+					id: "minecraft:blaze_spawn_egg"
+				}
+				id: "759C62C713BA78AA"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["3FB93E2BFE62D0F8"]
+			id: "61BC1B6A2524CBE7"
+			tasks: [{
+				icon: {
+					id: "minecraft:guardian_spawn_egg"
+				}
+				id: "7DD5D492B165FA27"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["15B7AF4DF1C30B14"]
+			id: "4527877C804CF3D8"
+			tasks: [{
+				icon: {
+					id: "minecraft:pillager_spawn_egg"
+				}
+				id: "798FE679399E24C5"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6BA76324A48CF929"]
+			id: "2DDE3DB9837389A1"
+			tasks: [{
+				icon: {
+					id: "minecraft:tropical_fish"
+				}
+				id: "44A26A3824D516F6"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2DDE3DB9837389A1"]
+			id: "7DFE355C46ABBA23"
+			tasks: [{
+				icon: {
+					id: "ribbits:toadstool"
+				}
+				id: "10FBA9CAE68C0EFC"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6BA76324A48CF929"]
+			id: "51C4CD8339C0BCFF"
+			tasks: [{
+				icon: {
+					id: "minecraft:cat_spawn_egg"
+				}
+				id: "28AE46F58319EE7F"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7421B16C7DA32D20"]
+			id: "39A837209DEB73E3"
+			tasks: [{
+				icon: {
+					id: "minecraft:axolotl_spawn_egg"
+				}
+				id: "0BB79621FD919239"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5874413FBDDE2AC1"]
+			id: "25AF01454763F97E"
+			tasks: [{
+				icon: {
+					id: "minecraft:panda_spawn_egg"
+				}
+				id: "184CB504DBD9879D"
+				type: "custom"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			id: "1E63AB6DF723500E"
+			size: 1.5d
+			tasks: [{
+				id: "66A7D2CB4B2DE1E3"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C73D78922A3488A"]
+			id: "6EE4B338012DA7BF"
+			tasks: [
+				{
+					id: "49C23A20C78A2BF5"
+					item: { count: 1, id: "exposure:black_and_white_film" }
+					type: "item"
+				}
+				{
+					id: "475F05FA93E4BC86"
+					item: { count: 1, id: "exposure:color_film" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1E63AB6DF723500E"]
+			id: "6C73D78922A3488A"
+			tasks: [{
+				id: "2600F9B4E8C1F33B"
+				item: { count: 1, id: "exposure:camera" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C73D78922A3488A"]
+			id: "5A23CB31E4C37B54"
+			tasks: [{
+				id: "6A48745095520D1E"
+				item: { count: 1, id: "exposure:camera_stand" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["01E41E192704C784"]
+			id: "66E06697BF497466"
+			tasks: [{
+				id: "2D2D4E72827754A7"
+				item: { count: 1, id: "exposure:lightroom" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C73D78922A3488A"]
+			id: "01E41E192704C784"
+			tasks: [{
+				icon: {
+					id: "minecraft:cow_spawn_egg"
+				}
+				id: "25A5DF50AF9EDA14"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["66E06697BF497466"]
+			id: "6A3E37220D5594EC"
+			tasks: [{
+				id: "1AE9F05284599540"
+				item: { count: 1, id: "exposure:photograph" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+	]
+}

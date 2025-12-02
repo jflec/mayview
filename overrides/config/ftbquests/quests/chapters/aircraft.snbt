@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aircraft"
+	group: "436C8BCB525E686C"
+	id: "7812103D020CCC08"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "65AFBCEAFA211C19"
+		tasks: [{
+			id: "61D9F558906EE73A"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

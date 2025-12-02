@@ -1,0 +1,266 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mining"
+	group: ""
+	id: "779407891BE6EF00"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7210FBAC487CF0C5"
+			tasks: [{
+				id: "1BE6A1FECF9F1DBC"
+				item: { count: 1, id: "minecraft:raw_copper" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			id: "76814F4F6DC542E4"
+			tasks: [{
+				id: "3BB7CBB0BBB32C2A"
+				item: { count: 1, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7210FBAC487CF0C5"]
+			id: "6C0E66901E0DE461"
+			tasks: [
+				{
+					id: "45431E18041E953F"
+					item: { count: 1, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+				{
+					id: "5643F25765B135D0"
+					item: { count: 1, id: "minecraft:raw_gold" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4B0B37574F3B140A"]
+			id: "3D0DDEA206761838"
+			tasks: [{
+				id: "6DE835319EB5A217"
+				item: { count: 1, id: "ores:raw_magnite" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3D0DDEA206761838"
+				"6B87149CD524571A"
+				"607DFAF6285CCC51"
+			]
+			id: "0AE17A255B4BCBFC"
+			tasks: [{
+				id: "689974B240EE9977"
+				item: { count: 1, id: "ores:raw_mythril" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			id: "19BF471F384D2F9B"
+			tasks: [{
+				id: "445B3BF165C58594"
+				item: { count: 1, id: "ores:raw_orichalcum" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			id: "533E5ECACD25067E"
+			tasks: [{
+				id: "13EDE2471E69C063"
+				item: { count: 1, id: "ores:raw_adamantite" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			id: "29765B282C564AFD"
+			tasks: [{
+				id: "0109AF87782794FA"
+				item: { count: 1, id: "ores:raw_celestium" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			id: "373301119DF9C5F0"
+			tasks: [{
+				id: "57369F5BC741E2AB"
+				item: { count: 1, id: "ores:raw_viridium" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["6C0E66901E0DE461"]
+			id: "37B7A6706503DCAD"
+			tasks: [{
+				id: "6BE9B31E0067E5E5"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6C0E66901E0DE461"]
+			id: "5DE5EC3C4A4958EA"
+			tasks: [{
+				id: "11B2888AFAA40578"
+				item: { count: 1, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0126831FF1FE4FF9"]
+			id: "607DFAF6285CCC51"
+			tasks: [{
+				id: "618716C406F4CA67"
+				item: { count: 1, id: "ores:magnite_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "525C43A93422EB8C"
+			tasks: [{
+				id: "628B276615BCEC4A"
+				item: { count: 1, id: "ores:mythril_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			id: "2025DC6E0C19B626"
+			tasks: [{
+				id: "361731A1555FDC6D"
+				item: { count: 1, id: "ores:orichalcum_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			id: "3F15E685B98695B3"
+			tasks: [{
+				id: "4C7AE51797D4FE02"
+				item: { count: 1, id: "ores:adamantite_ingot" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			id: "508C3778654FA16D"
+			tasks: [{
+				id: "2A9650569CCC3D09"
+				item: { count: 1, id: "ores:lunarium_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -13.0d
+		}
+		{
+			id: "053C1AB9DA385AFC"
+			tasks: [{
+				id: "115C43CF6515B4BD"
+				item: { count: 1, id: "ores:solarium_ingot" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -13.0d
+		}
+		{
+			id: "0F0A98EF2C7F915B"
+			tasks: [{
+				id: "26B81C53C48C6567"
+				item: { count: 1, id: "ores:viridium_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"37B7A6706503DCAD"
+				"5DE5EC3C4A4958EA"
+			]
+			id: "3930C84112375F97"
+			tasks: [{
+				id: "3343FEF7DBDFB69B"
+				item: { count: 1, id: "minecraft:iron_pickaxe" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3930C84112375F97"]
+			id: "20946855265AADF1"
+			tasks: [{
+				id: "4A16FEACA4549F80"
+				item: { count: 1, id: "ores:raw_cobalt" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3930C84112375F97"]
+			id: "0126831FF1FE4FF9"
+			tasks: [{
+				id: "0497D54BBB24FB47"
+				item: { count: 1, id: "ores:raw_magnite" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3930C84112375F97"]
+			id: "4B0B37574F3B140A"
+			tasks: [{
+				id: "0997C3D22B096B0B"
+				item: { count: 1, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20946855265AADF1"]
+			id: "6B87149CD524571A"
+			tasks: [{
+				id: "3C7972084B37214D"
+				item: { count: 1, id: "ores:cobalt_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+	]
+}

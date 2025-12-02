@@ -1,0 +1,20 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:copper_coin",
+    "count": {
+      "type": "constant",
+      "count": 8
+    }
+  },
+  "output": [
+    {
+      "item": "chimes:copper_chimes",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

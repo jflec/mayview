@@ -1,0 +1,26 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:copper_coin",
+    "count": {
+      "type": "constant",
+      "count": 5
+    }
+  },
+  "output": [
+    {
+      "item": "chimes:amethyst_chimes",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+
+    {
+      "item": "permanentsponges:magmatic_sponge",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

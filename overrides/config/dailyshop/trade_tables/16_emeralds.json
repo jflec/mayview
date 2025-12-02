@@ -1,0 +1,70 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:iron_coin",
+    "count": {
+      "type": "constant",
+      "count": 16
+    }
+  },
+  "output": [
+    {
+      "item": "farmersdelight:cabbage_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "farmersdelight:onion",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "farmersdelight:tomato_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:beetroot_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:carrot",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:melon_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:pumpkin_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:potato",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:sweet_berries",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:torchflower_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:wheat_seeds",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

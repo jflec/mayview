@@ -1,0 +1,150 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:gold_coin",
+    "count": {
+      "type": "constant",
+      "count": 27
+    }
+  },
+  "output": [
+    {
+      "item": "mega_showdown:aerodactylite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:alakazite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:beedrillite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:blastoisinite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:charizardite_x",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:charizardite_y",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:gengarite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:gyaradosite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:kangaskhanite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:mewtwonite_x",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:mewtwonite_y",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:pidgeotite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:pinsirite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:slowbronite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:venusaurite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:ampharosite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:scizorite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:steelixite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:tyranitarite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:banettite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:gardevoirite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:glalitite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:mawilite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:sablenite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:sharpedonite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:galladite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "mega_showdown:garchompite",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

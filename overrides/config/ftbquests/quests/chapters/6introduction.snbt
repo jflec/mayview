@@ -1,0 +1,127 @@
+{
+	autofocus_id: "43B54EE2E0483FA7"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6introduction"
+	group: "216429D7B624FFA8"
+	icon: {
+		id: "minecraft:sunflower"
+	}
+	id: "3BE7C2DCF9CBCB6C"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:item/sunflower"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/sunflower"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.0d
+			y: -1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "minecraft:cake"
+			}
+			id: "43B54EE2E0483FA7"
+			size: 1.5d
+			tasks: [{
+				id: "730BC26A4B786241"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1643F1BCE7BA5596"
+			tasks: [{
+				id: "0E785769ED175781"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "5A0D1ED863EAE870"
+			tasks: [{
+				id: "276E8645FC72B4A9"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "04E42B9FBE016B30"
+			tasks: [{
+				id: "5D74991949F500F9"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:paper"
+			}
+			id: "3FCF661FCC7DC7B0"
+			tasks: [{
+				id: "30A9565FD0EEC3B5"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:villager_spawn_egg"
+			}
+			id: "273B9B822BEA02AD"
+			tasks: [{
+				id: "4AACDC7F7783B67F"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:pillager_spawn_egg"
+			}
+			id: "5C05FD8030EC55C7"
+			tasks: [{
+				id: "6112A127C5F3A031"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "6D71C2CA71E05327"
+			tasks: [{
+				id: "5C72C182CB11749D"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "5D06B73472D423F9"
+			tasks: [{
+				id: "21FB74FBD2D214CD"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+	]
+}

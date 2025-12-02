@@ -1,0 +1,49 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1764381298503
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  universal_layout_blacklist = title_screen;
+  [loading_requirement_container_meta:23853083-3512-4669-b82b-f2a7b23489dd-1764381290942] = [groups:][instances:3d751ff0-2443-4bb9-80e5-588a817af7eb-1743984618719;8ed6b8e2-37ae-450f-ad72-934b0d577763-1752070031849;f4e5599d-74e7-431e-a927-a24ca15f0724-1752071817559;]
+  [loading_requirement:fancymenu_loading_requirement_is_world_loaded][requirement_mode:if_not][req_id:3d751ff0-2443-4bb9-80e5-588a817af7eb-1743984618719] = 
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:8ed6b8e2-37ae-450f-ad72-934b0d577763-1752070031849] = day_night_state:1
+  [loading_requirement:is_menu_title][requirement_mode:if_not][req_id:f4e5599d-74e7-431e-a927-a24ca15f0724-1752071817559] = title_screen
+}
+
+menu_background {
+  image_path = [source:local]/config/fancymenu/assets/main_menu_background_day_export.png
+  slide = false
+  repeat_texture = false
+  parallax = false
+  parallax_intensity = 0.02
+  invert_parallax = false
+  restart_animated_on_menu_load = false
+  instance_identifier = fd12413f-9c9e-470c-a6ba-a0cc99021039-1752068495756
+  background_type = image
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = true
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
+}
+

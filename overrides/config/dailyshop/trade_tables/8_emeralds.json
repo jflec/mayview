@@ -1,0 +1,25 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:gold_coin",
+    "count": {
+      "type": "constant",
+      "count": 2
+    }
+  },
+  "output": [
+    {
+      "item": "exposure:black_and_white_film",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "immersive_aircraft:improved_landing_gear",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

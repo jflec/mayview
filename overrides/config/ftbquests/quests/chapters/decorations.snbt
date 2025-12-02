@@ -1,0 +1,427 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "decorations"
+	group: ""
+	id: "7AA541E7B4C340DF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "23A454B9BDD31E3A"
+			tasks: [{
+				id: "22B83788BEFCB70B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2048C38357DF3AF7"]
+			id: "1BC47CB96D8FE4B9"
+			tasks: [{
+				id: "14C73FFB86E7D979"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:chairs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["60E1C289E4569BC8"]
+			id: "70B0582ABD4E4F7C"
+			tasks: [{
+				id: "7C71C90CED314D7D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:shelves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6726542348FAE313"]
+			id: "2CDAC0C55A09741B"
+			tasks: [{
+				id: "5D8AFBE60E17D248"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:tables)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1BC47CB96D8FE4B9"]
+			id: "70D09951B4872235"
+			tasks: [{
+				id: "7B5001A4CEFEE062"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:stools)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["79F942CC9C619D03"]
+			id: "6726542348FAE313"
+			tasks: [{
+				id: "7AFCCA66CD824446"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:shutters)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2048C38357DF3AF7"]
+			id: "79F942CC9C619D03"
+			tasks: [{
+				id: "088BA68C0A92D79F"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:flower_boxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5B83A95716BA6574"]
+			id: "60E1C289E4569BC8"
+			tasks: [{
+				id: "30212B4334563123"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:curtains)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BC47CB96D8FE4B9"]
+			id: "5E94DEE4A4E894B3"
+			tasks: [{
+				id: "72536B338A3536C6"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:benches)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2CDAC0C55A09741B"]
+			id: "61DD0A965A19CB74"
+			tasks: [{
+				id: "5245A5C57D4B65C0"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:drawers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2048C38357DF3AF7"]
+			id: "5B83A95716BA6574"
+			tasks: [{
+				id: "7CE72DA7861680C9"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:lamps)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5E94DEE4A4E894B3"]
+			id: "608469B7D54DCF1D"
+			tasks: [{
+				id: "7FE0B537C0752CB4"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:sofas)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5E94DEE4A4E894B3"]
+			id: "6E92BA5FB284EE90"
+			tasks: [{
+				id: "1285DDDD3CC35B17"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:tall_stools)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["23A454B9BDD31E3A"]
+			id: "2048C38357DF3AF7"
+			tasks: [{
+				id: "75D2C56F68C8D0CA"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:furniture_hammers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "72066E0FF8AA2818"
+			tasks: [{
+				id: "1155D187DF017339"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "729B036FD5D788DA"
+			tasks: [{
+				id: "681A3F3E4201EF81"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["490E0DBC9C4EFBA3"]
+			id: "1CB4C462B7CBD257"
+			tasks: [{
+				id: "2D29C59FAA514599"
+				item: { count: 1, id: "beautify:oak_trellis" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19BFFC32CD021B90"]
+			id: "01B29F6553BCB006"
+			tasks: [{
+				id: "6CB35B0181316475"
+				item: { count: 1, id: "beautify:oak_blinds" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CB4C462B7CBD257"]
+			id: "550C50D8DE796D33"
+			tasks: [{
+				id: "0D85532DB65E37DC"
+				item: { count: 1, id: "beautify:oak_picture_frame" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1CB4C462B7CBD257"]
+			id: "19BFFC32CD021B90"
+			tasks: [{
+				id: "2B9940F29592B0B2"
+				item: { count: 1, id: "beautify:lamp_candelabra" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["550C50D8DE796D33"]
+			id: "3DB0FFCE923E9FD5"
+			tasks: [{
+				id: "56687903CDA5A1CA"
+				item: { count: 1, id: "beautify:hanging_pot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0FF6C80F885678E7"]
+			id: "43416E322E5985E6"
+			tasks: [{
+				id: "74C5D84BF426AF66"
+				item: { count: 1, id: "beautify:bookstack" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CB4C462B7CBD257"]
+			id: "0FF6C80F885678E7"
+			tasks: [{
+				id: "100CAFB37F60C7D6"
+				item: { count: 1, id: "beautify:lamp_light_bulb" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["729B036FD5D788DA"]
+			id: "490E0DBC9C4EFBA3"
+			tasks: [{
+				id: "7FA3F56119B2E2DF"
+				item: { count: 1, id: "beautify:botanist_workbench" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "1248163B34A5BBE8"
+			tasks: [{
+				id: "32633652F307CD97"
+				item: { count: 1, id: "framedblocks:framed_cube" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "11EFE54E0E884A33"
+			tasks: [{
+				id: "138E648E9A53E6FF"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "69FC57545EB65959"
+			tasks: [{
+				id: "04EC2BBECDA2351A"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "38DA5DF08D6EDEF5"
+			tasks: [{
+				id: "727A97D2B66E8AC2"
+				item: { count: 1, id: "chimes:bamboo_chimes" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "36F87659706AF693"
+			tasks: [{
+				id: "1F1EBCEA5DDF469F"
+				item: { count: 1, id: "buildinggadgets2:template_manager" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "41972875336DBD9C"
+			tasks: [{
+				id: "5B1E62C5F7DA5842"
+				item: { count: 1, id: "buildinggadgets2:gadget_building" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			id: "6883CC239E12A79B"
+			tasks: [{
+				id: "5552883C5027F8DF"
+				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "6D714529B17D3A55"
+			tasks: [{
+				id: "375FE1D04C51F0D5"
+				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			id: "509D7EEB5F8F98A0"
+			tasks: [{
+				id: "6C98CBA9BF6A1003"
+				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "76BCE33707F6A608"
+			tasks: [{
+				id: "0A746AE3B8D0B04C"
+				item: { count: 1, id: "buildinggadgets2:gadget_destruction" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "0A31AE40EEE69880"
+			tasks: [{
+				id: "22CB6DADB1B3BC67"
+				item: { count: 1, id: "buildinggadgets2:template" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			id: "34A09B635A37C23B"
+			tasks: [{
+				id: "08E3FC9FEF487254"
+				item: { count: 1, id: "buildinggadgets2:redprint" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			id: "6C94E40ED1612D41"
+			tasks: [{
+				id: "32230CA34EF6A47E"
+				item: { count: 1, id: "permanentsponges:aqueous_sponge" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			id: "33879142942349BE"
+			tasks: [{
+				id: "2C07B75B3636887B"
+				item: { count: 1, id: "permanentsponges:magmatic_sponge" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			id: "474A6124659D379A"
+			tasks: [{
+				id: "4A174C9590A5B303"
+				item: { count: 1, id: "permanentsponges:aqueous_sponge_on_a_stick" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 7.0d
+		}
+		{
+			id: "3CA2FACD22A7A3F7"
+			tasks: [{
+				id: "3A1FF148E38B313A"
+				item: { count: 1, id: "permanentsponges:magmatic_sponge_on_a_stick" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+	]
+}

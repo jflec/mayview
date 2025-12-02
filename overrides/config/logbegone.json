@@ -1,0 +1,34 @@
+{
+  "logbegone": {
+    "phrases": [
+      "Disconnecting VANILLA connection attempt",
+      "Channels ",
+      "will NOT be loaded as mod badpackets is not present",
+      "Opening a config that was already loaded with value",
+      "unable to apply palette to",
+      "Exception loading blockstate definition",
+      "could not find uniform named",
+      "Missing translation for key",
+      "Couldn't parse element",
+      "Adding Entries from",
+      "Couldn't parse data file",
+      "Failed to process update information",
+      "Parsing error loading recipe"
+    ],
+    "regex": [
+      "Disconnecting VANILLA connection attempt",
+      "Channels ",
+      "will NOT be loaded as mod badpackets is not present",
+      "Opening a config that was already loaded with value",
+      "unable to apply palette to",
+      "Exception loading blockstate definition",
+      "could not find uniform named",
+      "Missing translation for key",
+      "Couldn't parse element",
+      "Adding Entries from",
+      "Couldn't parse data file",
+      "Failed to process update information",
+      "Parsing error loading recipe"
+    ]
+  }
+}

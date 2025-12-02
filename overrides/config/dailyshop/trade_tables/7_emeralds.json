@@ -1,0 +1,20 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:iron_coin",
+    "count": {
+      "type": "constant",
+      "count": 7
+    }
+  },
+  "output": [
+    {
+      "item": "immersive_aircraft:industrial_gears",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}

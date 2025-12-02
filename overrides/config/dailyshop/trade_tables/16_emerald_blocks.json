@@ -1,0 +1,145 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "mayview:diamond_coin",
+    "count": {
+      "type": "constant",
+      "count": 9
+    }
+  },
+  "output": [
+    {
+      "item": "creeperoverhaul:bamboo_creeper_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:allay_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:axolotl_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:bat_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:bee_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:camel_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:cat_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:dolphin_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:donkey_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:endermite_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:frog_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:glow_squid_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:goat_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:ocelot_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:panda_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:parrot_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:pillager_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:polar_bear_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:snow_golem_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:squid_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:tadpole_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:vex_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "minecraft:wolf_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "ribbits:ribbit_nitwit_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "ribbits:ribbit_sorcerer_spawn_egg",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    },
+    {
+      "item": "simpletms:tm_blank",
+      "count": { "type": "constant", "count": 1 },
+      "weight": 1
+    }
+  ]
+}
