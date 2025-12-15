@@ -23,6 +23,12 @@ ItemEvents.modifyTooltips((event) => {
     "kubejs:starter_care_package": [
       Text.aqua("Contains a collection of items to get you started!"),
     ],
+    "kubejs:tier_one_create_care_package": [
+      Text.aqua("Contains a collection of Create essentials!"),
+    ],
+    "kubejs:tier_two_create_care_package": [
+      Text.aqua("Contains a collection of Create essentials!"),
+    ],
   };
 
   Object.keys(CARE_PACKAGE_TOOLTIPS).forEach(function (itemId) {

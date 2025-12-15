@@ -35,10 +35,19 @@ StartupEvents.registry("block", function (event) {
       displayName: "Farming Care Package",
       soundType: "wool",
     },
-
     {
       id: "pokemon_care_package",
       displayName: "Pokémon Care Package",
+      soundType: "stone",
+    },
+    {
+      id: "tier_one_create_care_package",
+      displayName: "Tier One Create Care Package",
+      soundType: "wool",
+    },
+    {
+      id: "tier_two_create_care_package",
+      displayName: "Tier Two Create Care Package",
       soundType: "stone",
     },
   ];

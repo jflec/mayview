@@ -62,7 +62,6 @@ BlockEvents.rightClicked(WOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
   for (let i = 0; i < chosen.length; i++) {
     block.popItem(Item.of(chosen[i], 64 * 2));
   }
-
   block.set("minecraft:air");
 });
 

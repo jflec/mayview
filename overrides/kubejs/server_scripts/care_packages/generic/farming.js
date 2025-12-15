@@ -16,7 +16,6 @@ BlockEvents.rightClicked(FARMING_CARE_PACKAGE_BLOCK_ID, (event) => {
 
   dropAllFromCounts(block, FARMING_CARE_PACKAGE_ITEM_COUNTS);
 
-  player.playSound("minecraft:block.chest.open", 1, 1);
   block.set("minecraft:air");
 });
 
