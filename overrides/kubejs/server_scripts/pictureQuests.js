@@ -86,7 +86,6 @@ var quests = [
 ];
 
 function parseCameraData(dataObj) {
-  // Try both top-level and under .tag
   var comps = dataObj.components || (dataObj.tag && dataObj.tag.components);
   if (!comps) return [];
   var film = comps["exposure:camera_film"];

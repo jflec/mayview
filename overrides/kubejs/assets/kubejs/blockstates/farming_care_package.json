@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "kubejs:block/farming_care_package" }
+  }
+}
