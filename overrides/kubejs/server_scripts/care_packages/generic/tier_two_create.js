@@ -17,14 +17,41 @@ const TIER_TWO_CREATE_CARE_PACKAGE_ITEM_COUNTS = {
 };
 
 BlockEvents.rightClicked(TIER_TWO_CREATE_CARE_PACKAGE_BLOCK_ID, (event) => {
-  const { player, block, level, hand } = event;
+  const { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
-  if (hand !== "main_hand") return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
   spawnRandomFromTable(block, TIER_TWO_CREATE_CARE_PACKAGE_ITEM_COUNTS, 4);
+
+  let x = block.pos.x + 0.5;
+  let y = block.pos.y;
+  let z = block.pos.z + 0.5;
+
+  let asPlayer = 'execute as @a[name="' + player.username + '"] run ';
+
+  server.runCommandSilent(
+    asPlayer +
+      "playsound block.composter.fill_success player @s " +
+      x +
+      " " +
+      (y + 0.6) +
+      " " +
+      z +
+      " 1 1"
+  );
+  server.runCommandSilent(
+    asPlayer +
+      "particle minecraft:poof " +
+      x +
+      " " +
+      (y + 0.9) +
+      " " +
+      z +
+      " 0.35 0.35 0.35 0.10 18 normal"
+  );
+
   block.set("minecraft:air");
 });
 

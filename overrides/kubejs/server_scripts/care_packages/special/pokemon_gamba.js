@@ -1,4 +1,4 @@
-BlockEvents.rightClicked("kubejs:pokemon_care_package", function (event) {
+BlockEvents.rightClicked("kubejs:pokemon_gamba_package", function (event) {
   let player = event.player;
   let block = event.block;
   let level = event.level;

@@ -38,6 +38,16 @@ StartupEvents.registry("block", function (event) {
     {
       id: "pokemon_care_package",
       displayName: "Pokémon Care Package",
+      soundType: "wool",
+    },
+    {
+      id: "pokemon_gamba_package",
+      displayName: "Pokémon Gamba Package",
+      soundType: "stone",
+    },
+    {
+      id: "shiny_pokemon_gamba_package",
+      displayName: "Shiny Pokémon Gamba Package",
       soundType: "stone",
     },
     {

@@ -27,18 +27,45 @@ const SEED_CARE_PACKAGE_ITEM_IDS = [
 ];
 
 BlockEvents.rightClicked(SEED_CARE_PACKAGE_BLOCK_ID, (event) => {
-  const { player, block, level } = event;
+  const { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  const count = randInt(2, 3);
+  const count = randInt(3, 4);
   const chosen = pickRandomUnique(SEED_CARE_PACKAGE_ITEM_IDS, count);
 
   for (let i = 0; i < chosen.length; i++) {
     block.popItem(Item.of(chosen[i], 1));
   }
+
+  let x = block.pos.x + 0.5;
+  let y = block.pos.y;
+  let z = block.pos.z + 0.5;
+
+  let asPlayer = 'execute as @a[name="' + player.username + '"] run ';
+
+  server.runCommandSilent(
+    asPlayer +
+      "playsound block.composter.fill_success player @s " +
+      x +
+      " " +
+      (y + 0.6) +
+      " " +
+      z +
+      " 1 1"
+  );
+  server.runCommandSilent(
+    asPlayer +
+      "particle minecraft:poof " +
+      x +
+      " " +
+      (y + 0.9) +
+      " " +
+      z +
+      " 0.35 0.35 0.35 0.10 18 normal"
+  );
 
   block.set("minecraft:air");
 });

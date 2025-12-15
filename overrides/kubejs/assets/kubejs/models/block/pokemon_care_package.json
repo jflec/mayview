@@ -3,6 +3,6 @@
   "textures": {
     "side": "kubejs:block/pokemon_care_package_side",
     "top": "kubejs:block/pokemon_care_package_top",
-    "bottom": "kubejs:block/pokemon_care_package_bottom"
+    "bottom": "kubejs:block/care_package_bottom"
   }
 }

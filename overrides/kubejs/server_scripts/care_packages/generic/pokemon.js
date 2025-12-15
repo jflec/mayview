@@ -1,29 +1,20 @@
-const TIER_ONE_CREATE_CARE_PACKAGE_BLOCK_ID =
-  "kubejs:tier_one_create_care_package";
+const POKEMON_CARE_PACKAGE_BLOCK_ID = "kubejs:pokemon_care_package";
 
-const TIER_ONE_CREATE_CARE_PACKAGE_ITEM_COUNTS = {
+const POKEMON_CARE_PACKAGE_ITEM_COUNTS = {
   "create:shaft": 16,
   "create:cogwheel": 16,
   "create:large_cogwheel": 8,
   "create:mechanical_bearing": 1,
-  "create:andesite_encased_shaft": 8,
-  "create:belt_connector": 8,
-  "create:chute": 8,
-  "create:mechanical_press": 1,
-  "create:andesite_alloy": 16,
-  "create:iron_sheet": 8,
-  "create:copper_sheet": 8,
-  "create:zinc_nugget": 16,
 };
 
-BlockEvents.rightClicked(TIER_ONE_CREATE_CARE_PACKAGE_BLOCK_ID, (event) => {
+BlockEvents.rightClicked(POKEMON_CARE_PACKAGE_BLOCK_ID, (event) => {
   const { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  spawnRandomFromTable(block, TIER_ONE_CREATE_CARE_PACKAGE_ITEM_COUNTS, 4);
+  spawnRandomFromTable(block, POKEMON_CARE_PACKAGE_ITEM_COUNTS, 4);
 
   let x = block.pos.x + 0.5;
   let y = block.pos.y;
