@@ -8,11 +8,17 @@ BlockEvents.rightClicked("kubejs:pokemon_gamba_package", function (event) {
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  // Call global CarePackage_Fx 
+  // Call global CarePackage_Fx
   // Apply Sound and Particle Effects
-  global.CarePackageFX.pokemon(
-    { server: event.server, player: player, block: block },
-  );
+  global.CarePackageFX.pokemon({
+    server: event.server,
+    player: player,
+    block: block,
+  });
+
+  let x = block.pos.x + 0.5;
+  let y = block.pos.y;
+  let z = block.pos.z + 0.5;
 
   let lvl = randInt(10, 50);
   server.runCommandSilent(
