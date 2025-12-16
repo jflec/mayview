@@ -13,10 +13,7 @@ const STONE_CARE_PACKAGE_ITEM_IDS = [
 ];
 
 BlockEvents.rightClicked(STONE_CARE_PACKAGE_BLOCK_ID, (event) => {
-  let player = event.player;
-  let block = event.block;
-  let level = event.level;
-  let server = event.server;
+  let { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
@@ -28,14 +25,12 @@ BlockEvents.rightClicked(STONE_CARE_PACKAGE_BLOCK_ID, (event) => {
     block.popItem(Item.of(chosen[i], 64 * 4));
   }
 
-  // Call global CarePackage_Fx 
-  // Apply Sound and Particle Effects
   global.CarePackageFX.generic(
-    { server: event.server, player: player, block: block },
+    { server: server, player: player, block: block },
     {
       themeSound: "minecraft:block.deepslate_bricks.place",
       themeVol: 0.8,
-      themePitch: 1.1
+      themePitch: 1.1,
     }
   );
 
