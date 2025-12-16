@@ -8,51 +8,10 @@ BlockEvents.rightClicked("kubejs:pokemon_gamba_package", function (event) {
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  let x = block.pos.x + 0.5;
-  let y = block.pos.y;
-  let z = block.pos.z + 0.5;
-
-  let asPlayer = 'execute as @a[name="' + player.username + '"] run ';
-
-  server.runCommandSilent(
-    asPlayer +
-      "playsound cobblemon:evolution.ui player @s " +
-      x +
-      " " +
-      (y + 0.6) +
-      " " +
-      z +
-      " 1 1"
-  );
-  server.runCommandSilent(
-    asPlayer +
-      "playsound minecraft:entity.player.levelup player @s " +
-      x +
-      " " +
-      (y + 0.9) +
-      " " +
-      z +
-      " 0.9 1.25"
-  );
-  server.runCommandSilent(
-    asPlayer +
-      "playsound minecraft:entity.allay.ambient_without_item player @s " +
-      x +
-      " " +
-      (y + 0.9) +
-      " " +
-      z +
-      " 0.7 1.6"
-  );
-  server.runCommandSilent(
-    asPlayer +
-      "particle minecraft:totem_of_undying " +
-      x +
-      " " +
-      (y + 0.9) +
-      " " +
-      z +
-      " 0.35 0.35 0.35 0.10 18 normal"
+  // Call global CarePackage_Fx 
+  // Apply Sound and Particle Effects
+  global.CarePackageFX.pokemon(
+    { server: event.server, player: player, block: block },
   );
 
   let lvl = randInt(10, 50);

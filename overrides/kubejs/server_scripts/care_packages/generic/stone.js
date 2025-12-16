@@ -13,7 +13,10 @@ const STONE_CARE_PACKAGE_ITEM_IDS = [
 ];
 
 BlockEvents.rightClicked(STONE_CARE_PACKAGE_BLOCK_ID, (event) => {
-  const { player, block, level, server } = event;
+  let player = event.player;
+  let block = event.block;
+  let level = event.level;
+  let server = event.server;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
@@ -25,31 +28,15 @@ BlockEvents.rightClicked(STONE_CARE_PACKAGE_BLOCK_ID, (event) => {
     block.popItem(Item.of(chosen[i], 64 * 4));
   }
 
-  let x = block.pos.x + 0.5;
-  let y = block.pos.y;
-  let z = block.pos.z + 0.5;
-
-  let asPlayer = 'execute as @a[name="' + player.username + '"] run ';
-
-  server.runCommandSilent(
-    asPlayer +
-      "playsound block.composter.fill_success player @s " +
-      x +
-      " " +
-      (y + 0.6) +
-      " " +
-      z +
-      " 1 1"
-  );
-  server.runCommandSilent(
-    asPlayer +
-      "particle minecraft:poof " +
-      x +
-      " " +
-      (y + 0.9) +
-      " " +
-      z +
-      " 0.35 0.35 0.35 0.10 18 normal"
+  // Call global CarePackage_Fx 
+  // Apply Sound and Particle Effects
+  global.CarePackageFX.generic(
+    { server: event.server, player: player, block: block },
+    {
+      themeSound: "minecraft:block.deepslate_bricks.place",
+      themeVol: 0.8,
+      themePitch: 1.1
+    }
   );
 
   block.set("minecraft:air");
