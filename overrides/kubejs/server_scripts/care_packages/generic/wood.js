@@ -51,10 +51,7 @@ const WOOD_CARE_PACKAGE_ITEM_IDS = [
 ];
 
 BlockEvents.rightClicked(WOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
-  let player = event.player;
-  let block = event.block;
-  let level = event.level;
-  let server = event.server;
+  let { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
@@ -66,14 +63,12 @@ BlockEvents.rightClicked(WOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
     block.popItem(Item.of(chosen[i], 64 * 2));
   }
 
-  // Call global CarePackage_Fx 
-  // Apply Sound and Particle Effects
   global.CarePackageFX.generic(
-    { server: event.server, player: player, block: block },
+    { server: server, player: player, block: block },
     {
       themeSound: "minecraft:item.axe.strip",
       themeVol: 0.1,
-      themePitch: 1.1
+      themePitch: 1.1,
     }
   );
 

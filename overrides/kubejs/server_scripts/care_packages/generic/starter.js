@@ -54,27 +54,22 @@ const STARTER_CARE_PACKAGE_ITEM_COUNTS = {
 };
 
 BlockEvents.rightClicked(STARTER_CARE_PACKAGE_BLOCK_ID, (event) => {
-  let player = event.player;
-  let block = event.block;
-  let level = event.level;
-  let server = event.server;
+  let { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
   dropAllFromCounts(block, STARTER_CARE_PACKAGE_ITEM_COUNTS);
 
-  // Call global CarePackage_Fx 
-  // Apply Sound and Particle Effects
   global.CarePackageFX.generic(
-    { server: event.server, player: player, block: block },
+    { server: server, player: player, block: block },
     {
       themeSound: "create:sanding_short",
       themeVol: 0.8,
-      themePitch: 1.1
+      themePitch: 1.1,
     }
   );
-  
+
   block.set("minecraft:air");
 });
 

@@ -1,19 +1,14 @@
 BlockEvents.rightClicked(
   "kubejs:shiny_pokemon_gamba_package",
   function (event) {
-    let player = event.player;
-    let block = event.block;
-    let level = event.level;
-    let server = event.server;
+    let { player, block, level, server } = event;
 
     if (level.isClientSide()) return;
     if (!player.isCrouching()) return;
     if (!player.mainHandItem.isEmpty()) return;
 
-    // Call global CarePackage_Fx
-    // Apply Sound and Particle Effects
     global.CarePackageFX.pokemon(
-      { server: event.server, player: player, block: block },
+      { server: server, player: player, block: block },
       { variant: "shiny" }
     );
 

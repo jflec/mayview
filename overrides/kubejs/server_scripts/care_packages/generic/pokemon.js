@@ -1,15 +1,10 @@
 BlockEvents.rightClicked("kubejs:pokemon_care_package", function (event) {
-  let player = event.player;
-  let block = event.block;
-  let level = event.level;
-  let server = event.server;
+  let { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  // Call global CarePackage_Fx
-  // Apply Sound and Particle Effects
   global.CarePackageFX.pokemon({
     server: event.server,
     player: player,
@@ -21,6 +16,7 @@ BlockEvents.rightClicked("kubejs:pokemon_care_package", function (event) {
   let z = block.pos.z + 0.5;
 
   let lvl = randInt(10, 50);
+
   server.runCommandSilent(
     'execute as @a[name="' +
       player.username +

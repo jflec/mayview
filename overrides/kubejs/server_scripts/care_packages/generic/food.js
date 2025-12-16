@@ -140,10 +140,7 @@ const HIGH_FOODS = [
 ];
 
 BlockEvents.rightClicked(FOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
-  let player = event.player;
-  let block = event.block;
-  let level = event.level;
-  let server = event.server;
+  let { player, block, level, server } = event;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
@@ -165,14 +162,12 @@ BlockEvents.rightClicked(FOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
     block.popItem(Item.of(highs[0], 1));
   }
 
-  // Call global CarePackage_Fx 
-  // Apply Sound and Particle Effects
   global.CarePackageFX.generic(
-    { server: event.server, player: player, block: block },
+    { server: server, player: player, block: block },
     {
       themeSound: "minecraft:entity.frog.eat",
       themeVol: 0.8,
-      themePitch: 1.0
+      themePitch: 1.0,
     }
   );
 
@@ -191,9 +186,9 @@ function pickRandomUnique(list, count) {
 
   const n = Math.min(count, pool.length);
   for (let i = 0; i < n; i++) {
-    const idx = Math.floor(Math.random() * pool.length);
-    picked.push(pool[idx]);
-    pool.splice(idx, 1);
+    const index = Math.floor(Math.random() * pool.length);
+    picked.push(pool[index]);
+    pool.splice(index, 1);
   }
 
   return picked;
