@@ -1,7 +1,7 @@
 ItemEvents.modifyTooltips((event) => {
-  var COMMON_USAGE_LINES = [Text.gray("Place, then Sneak + Right Click")];
+  const COMMON_USAGE_LINES = [Text.gray("Place, then Sneak + Right Click")];
 
-  var CARE_PACKAGE_TOOLTIPS = {
+  const CARE_PACKAGE_TOOLTIPS = {
     "kubejs:seed_care_package": [Text.aqua("Contains a random selection of seeds!")],
     "kubejs:wood_care_package": [Text.aqua("Contains a random selection of logs!")],
     "kubejs:stone_care_package": [Text.aqua("Contains a random selection of stone!")],
@@ -17,26 +17,24 @@ ItemEvents.modifyTooltips((event) => {
     "kubejs:shiny_pokemon_gamba_package": [Text.aqua("Contains a random shiny Pokémon!")],
   };
 
-  var TITLE_OVERRIDES = {
-    "kubejs:pokemon_gamba_package": "Pokémon Gamba Package",
-    "kubejs:shiny_pokemon_gamba_package": "Shiny Pokémon Gamba Package",
+  const TITLE_OVERRIDES = {
+    "kubejs:pokemon_gamba_package": Text.lightPurple("Pokémon Gamba Package"),
+    // Gold title + sparkles for shiny ✨
+    "kubejs:shiny_pokemon_gamba_package": [
+      Text.of("✨Shiny Pokémon Gamba Package").gold()
+    ],
   };
 
-  Object.keys(CARE_PACKAGE_TOOLTIPS).forEach(function (itemId) {
-    event.modify(itemId, function (tooltip) {
-      tooltip.clear();
+  Object.keys(CARE_PACKAGE_TOOLTIPS).forEach(itemId => {
+    event.modify(itemId, tooltip => {
+      const title = TITLE_OVERRIDES[itemId];
 
-	  // pokemon package text color
-	  if (itemId === "kubejs:pokemon_gamba_package") {
-		tooltip.add(Text.lightPurple("Pokémon Gamba Package"));
-	  }
-
-	  // shiny pokemon package text color
-	  if (itemId === "kubejs:shiny_pokemon_gamba_package") {
-		tooltip.add(Text.gold("Shiny Pokémon Gamba Package"));
+      // If we want to force a custom colored title, clear + rebuild.
+      if (title) {
+        tooltip.clear();
+        tooltip.add(Array.isArray(title) ? title : [title]);
       }
 
-      // common
       tooltip.add(CARE_PACKAGE_TOOLTIPS[itemId]);
       tooltip.add(COMMON_USAGE_LINES);
     });
