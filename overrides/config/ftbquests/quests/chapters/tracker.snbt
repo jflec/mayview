@@ -1,0 +1,411 @@
+{
+	autofocus_id: "2FD4C17D11C1851D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tracker"
+	group: "379FE802613ABCBC"
+	icon: {
+		id: "mega_showdown:red_orb"
+	}
+	id: "540F372A7BD4CFCC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2FD4C17D11C1851D"
+			size: 1.5d
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/root"
+				criterion: ""
+				id: "074EB81D3C39881A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FD4C17D11C1851D"]
+			id: "3FD572CB67ABF2E9"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/find_dynamax_structure"
+				criterion: ""
+				id: "2FC3D9CEE60CA06E"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FD4C17D11C1851D"]
+			id: "07ABEDE97F847A49"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/find_mega_structure"
+				criterion: ""
+				id: "6F0909C0B021C81B"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2FD4C17D11C1851D"]
+			id: "7BC075BF0EBC836C"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/rotom/rotom_appliance"
+				criterion: ""
+				id: "112171545978DF4F"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FD4C17D11C1851D"]
+			id: "323D351D22E4A51C"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/bond/ash_cap_bond"
+				criterion: ""
+				id: "0E6E5FCE1E555591"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2FD4C17D11C1851D"]
+			id: "7302F3C75798860D"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/find_z_structure"
+				criterion: ""
+				id: "101044F60485CBFA"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FD4C17D11C1851D"]
+			id: "364AD0AE666BDB57"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/tera/get_tera_orb"
+				criterion: ""
+				id: "78A0C7BB8350FC4F"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FD572CB67ABF2E9"]
+			id: "17C7BCEA778A8639"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/find_wishing_star"
+				criterion: ""
+				id: "185FB7A639158081"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07ABEDE97F847A49"]
+			id: "49A94D269ECCB665"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/find_raw_megastone"
+				criterion: ""
+				id: "48CC2CDAEE265DC3"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07ABEDE97F847A49"]
+			id: "531A85415D938BA9"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/find_keystone"
+				criterion: ""
+				id: "34109D36D10F6BF3"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7BC075BF0EBC836C"]
+			id: "1903C6BFCD6A4A8B"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/rotom/rotom_form_change"
+				criterion: ""
+				id: "468DF422A71B7B2A"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["323D351D22E4A51C"]
+			id: "12DFFE0024D6E7BC"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/bond/ash_battle_bond"
+				criterion: ""
+				id: "22E64F7C230DDBED"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7302F3C75798860D"]
+			id: "7A9274DD78AF185C"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/get_blank_move"
+				criterion: ""
+				id: "679A3B7C7C5C5A7E"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7302F3C75798860D"]
+			id: "124A6CEF3DB7C01F"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/get_sparkling_stone"
+				criterion: ""
+				id: "474E1CA28662D138"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["364AD0AE666BDB57"]
+			id: "119998BF964FD8FE"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/tera/change_tera"
+				criterion: ""
+				id: "3DF4192F1E0E0C23"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["364AD0AE666BDB57"]
+			id: "045560B3BFE828F9"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/tera/terastallized"
+				criterion: ""
+				id: "0051094B444D46B8"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17C7BCEA778A8639"]
+			id: "50FADB377527FCEB"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/get_power_spot"
+				criterion: ""
+				id: "7A061E43E9DC71E1"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17C7BCEA778A8639"]
+			id: "0CF751CFA61BED46"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/get_dynamax_band"
+				criterion: ""
+				id: "7AD06CE82E632843"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49A94D269ECCB665"]
+			id: "2B9F6235932D7B54"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/get_any_mega_stone"
+				criterion: ""
+				id: "6ECF10F83C869E46"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["531A85415D938BA9"]
+			id: "25A6B64C14DA3789"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/get_any_mega_bracelet"
+				criterion: ""
+				id: "41AF05F10888A01D"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["12DFFE0024D6E7BC"]
+			id: "64C229C2CA3089AD"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/bond/ash_greninja"
+				criterion: ""
+				id: "3AADBF91B992C6A5"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A9274DD78AF185C"]
+			id: "659D6829FEEB8085"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/get_z_move"
+				criterion: ""
+				id: "5E8479CA551AC1CC"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["124A6CEF3DB7C01F"]
+			id: "396225ECFA2D7D00"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/get_z_ring"
+				criterion: ""
+				id: "2F416DF77F529C7E"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["119998BF964FD8FE"]
+			id: "4F85ADE0481AFD26"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/tera/change_tera_stellar"
+				criterion: ""
+				id: "16A3ABF7C0346E2D"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0CF751CFA61BED46"]
+			id: "09D21A077A30DC5E"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/dynamax_candy_max"
+				criterion: ""
+				id: "3E0E986E105EF450"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0CF751CFA61BED46"]
+			id: "7A18D17DD6205CA6"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/gigantamax"
+				criterion: ""
+				id: "054EDEA4131329F0"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0CF751CFA61BED46"]
+			id: "4E34326C9CDBC5DB"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/dynamax/dynamax"
+				criterion: ""
+				id: "2D03B84BE9D55212"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B9F6235932D7B54"]
+			id: "0142F436D46032EF"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/craft_mega_stones"
+				criterion: ""
+				id: "0F1F631EB5D04417"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["25A6B64C14DA3789"]
+			id: "6D5071951CA6F068"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/mega_evolve"
+				criterion: ""
+				id: "3E78E97E99B59E26"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["659D6829FEEB8085"]
+			id: "73B82CDF2AF52C02"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/z_moves"
+				criterion: ""
+				id: "2B82DA5877A84C7B"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6D5071951CA6F068"]
+			id: "4EF0E4010FFDF107"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/craft_mega_bracelets"
+				criterion: ""
+				id: "4110DDEAF0D63927"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["73B82CDF2AF52C02"]
+			id: "2F6B2CE06045546D"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/z/get_all_z_move"
+				criterion: ""
+				id: "048FFA979CB525B9"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4EF0E4010FFDF107"]
+			id: "4703BF014E4A294C"
+			tasks: [{
+				advancement: "mega_showdown:mega_showdown/mega/craft_mega_accessories"
+				criterion: ""
+				id: "6C51264BB76FEE18"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+	]
+}

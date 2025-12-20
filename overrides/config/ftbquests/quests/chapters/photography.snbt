@@ -3,9 +3,12 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "photography"
-	group: ""
+	group: "216429D7B624FFA8"
+	icon: {
+		id: "minecraft:bee_spawn_egg"
+	}
 	id: "630478462301384A"
-	order_index: 2
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{

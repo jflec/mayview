@@ -1,0 +1,545 @@
+{
+	autofocus_id: "31520C3B86B5D14F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cyoufr_journey"
+	group: "379FE802613ABCBC"
+	icon: {
+		id: "cobblemon:poke_ball"
+	}
+	id: "6515EB822556FD4B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31520C3B86B5D14F"
+			rewards: [{
+				id: "039D81102588F278"
+				item: {
+					components: {
+						"relics:data": {
+							abilities: {
+								abilities: {
+									runner: {
+										extender: {
+											cooldown: 0
+											cooldownCap: 0
+											ticking: 0b
+										}
+										lock: {
+											breaks: 5
+										}
+										points: 0
+										research: {
+											links: { }
+											researched: 0b
+										}
+										stats: {
+											speed: {
+												initialValue: 0.5771d
+											}
+										}
+									}
+								}
+							}
+							leveling: {
+								experience: 0
+								level: 0
+								luck: 0
+								points: 0
+							}
+						}
+					}
+					count: 1
+					id: "artifacts:running_shoes"
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				advancement: "cobblemon:root"
+				criterion: ""
+				id: "7F26C9B91E0D815C"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["362AD96860B72D62"]
+			id: "0B8F41848A30EBDD"
+			rewards: [{
+				id: "344B940DF0C732F7"
+				table_id: 3771145941052858280L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "cobblemon:craft_pokedex"
+				criterion: ""
+				id: "38DBC12332F641A3"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["362AD96860B72D62"]
+			id: "0F1E329E235A7C98"
+			rewards: [{
+				count: 8
+				id: "44A06CD0EE51E129"
+				item: {
+					count: 1
+					id: "minecraft:beef"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "cobblemon:place_campfire_pot"
+				criterion: ""
+				id: "0538829BE7AF1002"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69F649313F00B5BB"]
+			id: "016CAE191A3445BF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2B4748C838EE461E"
+				item: {
+					count: 1
+					id: "mayview:coin_pouch"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "cobblemon:first_battle_victory"
+				criterion: ""
+				id: "70940BD0818790B3"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31520C3B86B5D14F"]
+			id: "362AD96860B72D62"
+			rewards: [
+				{
+					id: "31E9D458B9EE5302"
+					item: {
+						count: 1
+						id: "minecraft:raw_copper"
+					}
+					type: "item"
+				}
+				{
+					id: "2E4391097C98EC1F"
+					item: {
+						count: 1
+						id: "minecraft:raw_iron"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "cobblemon:harvest_apricorn"
+				criterion: ""
+				id: "099D64FA4DDB1EC5"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["362AD96860B72D62"]
+			id: "69F649313F00B5BB"
+			rewards: [{
+				count: 2
+				id: "78C478907BADADA8"
+				item: {
+					count: 1
+					id: "cobblemon:great_ball"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				advancement: "cobblemon:craft_poke_ball"
+				criterion: ""
+				id: "203BFB5C8A9F21E2"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69F649313F00B5BB"]
+			id: "0398F21524DC7590"
+			tasks: [{
+				advancement: "cobblemon:first_catch"
+				criterion: ""
+				id: "5C656DB39CE1E8BB"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0398F21524DC7590"]
+			id: "0BEF6D91E50F42E7"
+			tasks: [{
+				advancement: "cobblemon:full_party"
+				criterion: ""
+				id: "371C2203E9A1C939"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0BEF6D91E50F42E7"]
+			id: "0DCBC60C63FE9527"
+			tasks: [{
+				advancement: "cobblemon:use_pasture"
+				criterion: ""
+				id: "24C36308E46A4108"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0DCBC60C63FE9527"]
+			id: "417B75BBC1CBBF60"
+			tasks: [{
+				advancement: "cobblemon:interact_with_pokemon"
+				criterion: ""
+				id: "32A8A7D7DC22E1E6"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0398F21524DC7590"]
+			id: "19A2F82C3ED64A17"
+			size: 1.25d
+			tasks: [{
+				advancement: "cobblemon:ride_pokemon"
+				criterion: ""
+				id: "0BD07E738BC64E01"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["19A2F82C3ED64A17"]
+			id: "41E08891F539622E"
+			tasks: [{
+				advancement: "cobblemon:max_ride_stats"
+				criterion: ""
+				id: "1A2A52911CD36679"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0398F21524DC7590"]
+			id: "61636EE0A262B59D"
+			tasks: [{
+				advancement: "cobblemon:first_evolution"
+				criterion: ""
+				id: "760D8E64D384874F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0398F21524DC7590"]
+			id: "3E1010E09DC4090A"
+			optional: true
+			tasks: [{
+				advancement: "cobblemon:trade_pokemon"
+				criterion: ""
+				id: "5D7D4AEBBCA35561"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3E1010E09DC4090A"]
+			id: "52D3CFF28F5E3927"
+			optional: true
+			tasks: [{
+				advancement: "cobblemon:trade_shelmet_karrablast"
+				criterion: ""
+				id: "62A5BDE3EFCCB6FC"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["69F649313F00B5BB"]
+			id: "6DAAC90FB9CF2B68"
+			rewards: [{
+				id: "1D7B8B985D46847A"
+				item: {
+					count: 1
+					id: "cobblemon:master_ball"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "cobblemon:first_shiny_catch"
+				criterion: ""
+				id: "1C6E68635DDD44AB"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0F1E329E235A7C98"]
+			id: "2AC1D1E068C6DE6F"
+			size: 1.25d
+			tasks: [{
+				advancement: "cobblemon:use_candy"
+				criterion: ""
+				icon: {
+					id: "cobblemon:exp_candy_m"
+				}
+				id: "230A94BF343E681F"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2AC1D1E068C6DE6F"]
+			id: "42E54D6D039F47E1"
+			tasks: [{
+				advancement: "cobblemon:use_iv_candy"
+				criterion: ""
+				id: "47083BC1C7DE33A8"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0F1E329E235A7C98"]
+			id: "4A2022FEAB85AAA7"
+			tasks: [{
+				advancement: "cobblemon:cook_all_ev_mochi"
+				criterion: ""
+				id: "3EE8E4EA6112E3C1"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0F1E329E235A7C98"]
+			id: "66248CFB606F439F"
+			tasks: [{
+				advancement: "cobblemon:cook_all_regional_delicacies"
+				criterion: ""
+				id: "1C24E06A12D464D3"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["69F649313F00B5BB"]
+			id: "4E5B6D8B95EB6035"
+			tasks: [{
+				advancement: "cobblemon:obtain_fossil"
+				criterion: ""
+				id: "0E94FA5BA7532B16"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4E5B6D8B95EB6035"]
+			id: "0F0E6B828DF33DA5"
+			tasks: [{
+				advancement: "cobblemon:resurrect_pokemon"
+				criterion: ""
+				id: "5F114DBFBC0F72B2"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0F0E6B828DF33DA5"]
+			id: "4DC89A65FF44DF9C"
+			rewards: [
+				{
+					count: 4
+					id: "325269107345A3AA"
+					item: {
+						count: 1
+						id: "cobblemon:exp_candy_m"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5B8FFBBE37CD5D0F"
+					item: {
+						count: 1
+						id: "cobblemon:exp_candy_l"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "cobblemon:resurrect_galar_fossil"
+				criterion: ""
+				id: "39D2C369935A46BA"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69F649313F00B5BB"]
+			id: "685828373D9F4A4D"
+			tasks: [{
+				advancement: "cobblemon:craft_base_balls"
+				criterion: ""
+				id: "18974A3BCE3BA808"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["685828373D9F4A4D"]
+			id: "6A5FA5478EFC57B9"
+			tasks: [{
+				advancement: "cobblemon:craft_apricorn_balls"
+				criterion: ""
+				id: "386A8AC364E7D534"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6A5FA5478EFC57B9"]
+			id: "790B04322045AEBC"
+			tasks: [{
+				advancement: "cobblemon:craft_ancient_balls"
+				criterion: ""
+				id: "01725D9FB77426C7"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["790B04322045AEBC"]
+			id: "183CAB6FCFD27E41"
+			size: 1.25d
+			tasks: [{
+				advancement: "cobblemon:craft_all_balls"
+				criterion: ""
+				id: "7E4B709D38DA93F9"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["685828373D9F4A4D"]
+			id: "6E17A064AC8199AA"
+			tasks: [{
+				advancement: "cobblemon:craft_rod"
+				criterion: ""
+				id: "6847A65DA2305C20"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6E17A064AC8199AA"]
+			id: "7196D7358AF0B081"
+			tasks: [{
+				advancement: "cobblemon:craft_master_rod"
+				criterion: ""
+				id: "77FF2E23529F2770"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6E17A064AC8199AA"]
+			id: "543C423463FE6027"
+			tasks: [{
+				advancement: "cobblemon:use_all_berry_bait"
+				criterion: ""
+				id: "54DE15EEDAD175EB"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6E17A064AC8199AA"]
+			id: "06F196382FAA8286"
+			tasks: [{
+				advancement: "cobblemon:use_poke_bait"
+				criterion: ""
+				id: "672F5F1DD527D358"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["61636EE0A262B59D"]
+			id: "180B3BEA70344267"
+			tasks: [{
+				advancement: "cobblemon:evolve_gholdengo_netherite"
+				criterion: ""
+				id: "59A14F26887AC9EA"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["61636EE0A262B59D"]
+			id: "7782F115C09E2489"
+			size: 1.25d
+			tasks: [{
+				advancement: "cobblemon:max_level_baby"
+				criterion: ""
+				icon: {
+					id: "cobblemon:exp_candy_xl"
+				}
+				id: "7BAAFFF112B1B992"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+	]
+}

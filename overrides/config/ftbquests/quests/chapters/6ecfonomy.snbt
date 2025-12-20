@@ -1,0 +1,175 @@
+{
+	autofocus_id: "2E5866CA79AB274A"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6ecfonomy"
+	group: "216429D7B624FFA8"
+	icon: {
+		id: "mayview:gold_coin"
+	}
+	id: "7945EEEB5303E899"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "mayview:copper_coin"
+			}
+			id: "2E5866CA79AB274A"
+			size: 1.5d
+			tasks: [{
+				id: "74F44F79590DEFEA"
+				item: { count: 1, id: "mayview:copper_coin" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E5866CA79AB274A"]
+			id: "090DDB061A29C380"
+			tasks: [{
+				count: 99L
+				id: "1C9D33659DFEB3C1"
+				item: { count: 1, id: "mayview:iron_coin" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E5866CA79AB274A"]
+			id: "2F174A4CD3484062"
+			tasks: [{
+				id: "6825FA773EA3AF3E"
+				item: { components: { "sellingbin:bin_material": "wood", "sellingbin:bin_mode": "player_bound" }, count: 1, id: "sellingbin:selling_bin" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4653E430E6C28B82"]
+			id: "00B363F735626BAD"
+			size: 1.25d
+			tasks: [{
+				id: "3C345BFC36753C5E"
+				item: { components: { "sellingbin:bin_material": "netherite", "sellingbin:bin_mode": "player_bound" }, count: 1, id: "sellingbin:selling_bin" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["090DDB061A29C380"]
+			id: "00C59F8525D48840"
+			tasks: [{
+				count: 99L
+				id: "0F7270466A647794"
+				item: { count: 1, id: "mayview:gold_coin" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00C59F8525D48840"]
+			id: "0791C1B46A258F54"
+			size: 1.25d
+			tasks: [{
+				count: 99L
+				id: "2C3C6FD5A874D7A9"
+				item: { count: 1, id: "mayview:diamond_coin" }
+				type: "item"
+			}]
+			x: -6.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F174A4CD3484062"]
+			id: "73CA7AE70B0F3318"
+			tasks: [{
+				id: "601A871512A638B4"
+				item: { components: { "sellingbin:bin_material": "iron", "sellingbin:bin_mode": "player_bound" }, count: 1, id: "sellingbin:selling_bin" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"73CA7AE70B0F3318"
+				"2EA8499C85F1E97B"
+			]
+			id: "4653E430E6C28B82"
+			tasks: [{
+				id: "4F3F61594CF8C85C"
+				item: { components: { "sellingbin:bin_material": "diamond", "sellingbin:bin_mode": "player_bound" }, count: 1, id: "sellingbin:selling_bin" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F174A4CD3484062"]
+			id: "2EA8499C85F1E97B"
+			tasks: [{
+				id: "7EE46AD75890C4E8"
+				item: { components: { "sellingbin:bin_material": "redstone", "sellingbin:bin_mode": "block_bound" }, count: 1, id: "sellingbin:selling_bin" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E5866CA79AB274A"]
+			id: "2B6DD29FB1207A45"
+			tasks: [{
+				id: "3A7F4EC78B493398"
+				item: { count: 1, id: "mayview:piggy_bank" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E5866CA79AB274A"]
+			id: "3349CCFEF4645049"
+			tasks: [{
+				advancement: "minecraft:adventure/trade"
+				criterion: ""
+				icon: {
+					id: "minecraft:villager_spawn_egg"
+				}
+				id: "3B3B03D4157EC2FE"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E5866CA79AB274A"]
+			id: "30821B42C8DEB8B6"
+			tasks: [{
+				id: "18A2D4033FED5C56"
+				item: { count: 1, id: "dailyshop:daily_shop" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30821B42C8DEB8B6"]
+			id: "6ED3683B843FCFDA"
+			tasks: [{
+				icon: {
+					id: "create:cardboard_package_12x10"
+				}
+				id: "3A8C0851FA67CF16"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6trafnsportation"
+	group: "216429D7B624FFA8"
+	icon: {
+		id: "create_hypertube:hypertube_accelerator"
+	}
+	id: "5FCE96282A5C444C"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		id: "0CB4B08BA3BE3B14"
+		tasks: [{
+			id: "326A9AB0E40C97A7"
+			item: { count: 1, id: "minecraft:spruce_trapdoor" }
+			type: "item"
+		}]
+		x: 1.0d
+		y: 0.0d
+	}]
+}

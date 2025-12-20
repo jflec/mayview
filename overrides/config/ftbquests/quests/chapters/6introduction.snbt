@@ -8,66 +8,49 @@
 		id: "minecraft:sunflower"
 	}
 	id: "3BE7C2DCF9CBCB6C"
-	images: [
-		{
-			height: 1.0d
-			image: "minecraft:item/sunflower"
-			rotation: 0.0d
-			width: 1.0d
-			x: 1.0d
-			y: 1.0d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:item/sunflower"
-			rotation: 0.0d
-			width: 1.0d
-			x: -1.0d
-			y: -1.0d
-		}
-	]
+	images: [{
+		height: 1.0d
+		image: "minecraft:item/bee_spawn_egg"
+		rotation: 0.0d
+		width: 1.0d
+		x: 1.0d
+		y: 1.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			icon: {
-				id: "minecraft:cake"
+				id: "minecraft:sunflower"
 			}
 			id: "43B54EE2E0483FA7"
+			rewards: [{
+				id: "6C6DA509AA0BEE3B"
+				item: {
+					count: 1
+					id: "kubejs:starter_care_package"
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
-				id: "730BC26A4B786241"
+				id: "034ABF3DDC39FE39"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			id: "1643F1BCE7BA5596"
-			tasks: [{
-				id: "0E785769ED175781"
-				type: "checkmark"
-			}]
-			x: -1.0d
-			y: 3.0d
-		}
-		{
-			id: "5A0D1ED863EAE870"
-			tasks: [{
-				id: "276E8645FC72B4A9"
-				type: "checkmark"
-			}]
-			x: -3.0d
-			y: -2.0d
-		}
-		{
+			icon: {
+				id: "minecraft:golden_pickaxe"
+			}
 			id: "04E42B9FBE016B30"
 			tasks: [{
 				id: "5D74991949F500F9"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			icon: {
@@ -78,8 +61,8 @@
 				id: "30A9565FD0EEC3B5"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			icon: {
@@ -90,8 +73,8 @@
 				id: "4AACDC7F7783B67F"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			icon: {
@@ -102,26 +85,8 @@
 				id: "6112A127C5F3A031"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -2.0d
-		}
-		{
-			id: "6D71C2CA71E05327"
-			tasks: [{
-				id: "5C72C182CB11749D"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			id: "5D06B73472D423F9"
-			tasks: [{
-				id: "21FB74FBD2D214CD"
-				type: "checkmark"
-			}]
-			x: -3.0d
-			y: 2.0d
+			x: 2.0d
+			y: -1.0d
 		}
 	]
 }
