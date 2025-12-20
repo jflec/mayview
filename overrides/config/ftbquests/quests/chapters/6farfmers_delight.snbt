@@ -1,279 +1,314 @@
 {
-	autofocus_id: "18EDBF69070174E4"
+	autofocus_id: "356E5A72B9C35F2E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "6farfmers_delight"
-	group: "1159A57A6FCB1D1E"
+	group: "216429D7B624FFA8"
 	icon: {
-		id: "farmersdelight:smoked_ham"
+		id: "minecraft:golden_apple"
 	}
 	id: "6E8FD638D9F526C9"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			id: "18EDBF69070174E4"
+			dependencies: ["54AE6C7B41BD5077"]
+			id: "548343A390F2D219"
+			tasks: [{
+				icon: {
+					id: "minecraft:torchflower_seeds"
+				}
+				id: "410D515B16A65B06"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"548343A390F2D219"
+				"3B25CB0228D8A38F"
+			]
+			id: "323A4550C21D0C2C"
+			tasks: [{
+				count: 32L
+				id: "05C8A59722D86E15"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:fertilizers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"323A4550C21D0C2C"
+				"548343A390F2D219"
+				"0136170ECFA84AAE"
+			]
+			dependency_requirement: "one_completed"
+			id: "07F725FB96CC4E68"
+			tasks: [{
+				id: "6965AFCA75B866D6"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["323A4550C21D0C2C"]
+			id: "5F0AAF85536395AC"
+			tasks: [
+				{
+					count: 8L
+					id: "04029ED5787CA414"
+					item: { count: 1, id: "farmersdelight:organic_compost" }
+					type: "item"
+				}
+				{
+					advancement: "farmersdelight:main/place_organic_compost"
+					criterion: ""
+					id: "5CA1DD4A5F7E7FCC"
+					type: "advancement"
+				}
+			]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"5F0AAF85536395AC"
+				"5B941D762908023B"
+			]
+			id: "0431A9ACE4F30C6E"
+			tasks: [
+				{
+					count: 8L
+					id: "0C670FD750CFEEE9"
+					item: { count: 1, id: "farmersdelight:rich_soil" }
+					type: "item"
+				}
+				{
+					advancement: "farmersdelight:main/get_rich_soil"
+					criterion: ""
+					id: "75C02AD220DA623C"
+					type: "advancement"
+				}
+			]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["323A4550C21D0C2C"]
+			id: "5B941D762908023B"
+			tasks: [{
+				id: "410A40DB0AAF160F"
+				item: { count: 1, id: "minecraft:mycelium" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			id: "356E5A72B9C35F2E"
 			size: 1.5d
 			tasks: [{
-				advancement: "farmersdelight:main/root"
-				criterion: ""
-				id: "1EE85BDF861F8F10"
-				type: "advancement"
+				id: "770A118D2C1B642B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:hoes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["18EDBF69070174E4"]
-			id: "6CE0C66F2D381FA3"
+			dependencies: ["548343A390F2D219"]
+			id: "0136170ECFA84AAE"
+			optional: true
 			tasks: [{
-				advancement: "farmersdelight:main/craft_knife"
-				criterion: ""
-				id: "5E7C3EBBD4118A4A"
-				type: "advancement"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6CE0C66F2D381FA3"]
-			id: "482AD3682F99A489"
-			tasks: [{
-				advancement: "farmersdelight:main/use_cutting_board"
-				criterion: ""
-				id: "1FCF963D34EEF3BC"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6CE0C66F2D381FA3"]
-			id: "6449B7B55948281E"
-			tasks: [{
-				advancement: "farmersdelight:main/harvest_straw"
-				criterion: ""
-				id: "0684E3941C86025B"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6449B7B55948281E"]
-			id: "3BAD79DEC7D6CAB9"
-			tasks: [{
-				advancement: "farmersdelight:main/place_organic_compost"
-				criterion: ""
-				id: "648188CCE86C8734"
-				type: "advancement"
-			}]
-			x: -6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3BAD79DEC7D6CAB9"]
-			id: "5CA9DA4A3BB7FF88"
-			tasks: [{
-				advancement: "farmersdelight:main/get_rich_soil"
-				criterion: ""
-				id: "77EE1BD4C21EF25C"
-				type: "advancement"
-			}]
-			x: -8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6CE0C66F2D381FA3"]
-			id: "2575C318CC3C4FF2"
-			tasks: [{
-				advancement: "farmersdelight:main/get_ham"
-				criterion: ""
-				id: "184A4E70307FD519"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["18EDBF69070174E4"]
-			id: "703F09791ECEEFEB"
-			tasks: [{
-				advancement: "farmersdelight:main/get_fd_seed"
-				criterion: ""
-				id: "1C069E224046B2ED"
-				type: "advancement"
+				id: "6BB59FE91B9A8388"
+				item: { count: 1, id: "minecraft:water_bucket" }
+				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["703F09791ECEEFEB"]
-			id: "195ECD91456C6069"
+			dependencies: ["356E5A72B9C35F2E"]
+			id: "54AE6C7B41BD5077"
 			tasks: [{
-				advancement: "farmersdelight:main/plant_rice"
+				advancement: "minecraft:husbandry/plant_seed"
 				criterion: ""
-				id: "5AFE0DD4573E198C"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["195ECD91456C6069"]
-			id: "1A343497123FE56A"
-			tasks: [{
-				advancement: "farmersdelight:main/plant_all_crops"
-				criterion: ""
-				id: "76D78ABF783411AE"
-				type: "advancement"
-			}]
-			x: 6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["703F09791ECEEFEB"]
-			id: "559A03FA319714E9"
-			tasks: [{
-				advancement: "farmersdelight:main/get_mushroom_colony"
-				criterion: ""
-				id: "518A0F5A10BBC7EE"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["703F09791ECEEFEB"]
-			id: "443C75511B54A439"
-			tasks: [{
-				advancement: "farmersdelight:main/harvest_ropelogged_tomato"
-				criterion: ""
-				id: "7E9C0C0F63E7783D"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["443C75511B54A439"]
-			id: "1AD263AFBF359274"
-			tasks: [{
-				advancement: "farmersdelight:main/hit_raider_with_rotten_tomato"
-				criterion: ""
-				id: "1B41BFEC88ECD30B"
-				type: "advancement"
-			}]
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0A2CAFA7239A473C"]
-			id: "74A7436547E41CF1"
-			tasks: [{
-				advancement: "farmersdelight:main/use_skillet"
-				criterion: ""
-				id: "369A84401702C67E"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["74A7436547E41CF1"]
-			id: "7FAB8BFAADECB37E"
-			tasks: [{
-				advancement: "farmersdelight:main/place_skillet"
-				criterion: ""
-				id: "2859184F66B6AE3D"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["18EDBF69070174E4"]
-			id: "0A2CAFA7239A473C"
-			tasks: [{
-				advancement: "farmersdelight:main/place_campfire"
-				criterion: ""
-				id: "2B6785E0E43826A8"
+				id: "0C9109C28E23E9D3"
 				type: "advancement"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0A2CAFA7239A473C"]
-			id: "11177DCAF6B537AD"
+			dependencies: ["0431A9ACE4F30C6E"]
+			id: "29D64DF23CC79215"
+			size: 1.25d
 			tasks: [{
-				advancement: "farmersdelight:main/place_cooking_pot"
-				criterion: ""
-				id: "78152001CCB76298"
-				type: "advancement"
+				icon: {
+					id: "minecraft:hay_block"
+				}
+				id: "39FA7A6836332227"
+				type: "custom"
 			}]
 			x: -2.0d
-			y: 4.0d
+			y: -12.0d
 		}
 		{
-			dependencies: ["11177DCAF6B537AD"]
-			id: "77917BE88440FA00"
+			dependencies: ["54AE6C7B41BD5077"]
+			id: "3B25CB0228D8A38F"
+			tasks: [{
+				id: "208504EA5488C7FF"
+				item: { count: 1, id: "minecraft:composter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0136170ECFA84AAE"
+				"07F725FB96CC4E68"
+			]
+			id: "2EAC03F39F4B9DA6"
+			size: 1.25d
+			tasks: [
+				{
+					id: "0E8D6EA58932CF12"
+					item: { count: 1, id: "farmersdelight:cooking_pot" }
+					type: "item"
+				}
+				{
+					id: "3ECBFF842DEDE115"
+					item: { count: 1, id: "farmersdelight:cutting_board" }
+					type: "item"
+				}
+				{
+					id: "7DBFDCFCA3AFB1FB"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:tools/knife)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2EAC03F39F4B9DA6"]
+			id: "710344B0D7FBA782"
+			tasks: [
+				{
+					advancement: "farmersdelight:main/place_cooking_pot"
+					criterion: ""
+					id: "5FAD5CD5268F9C3F"
+					type: "advancement"
+				}
+				{
+					advancement: "farmersdelight:main/place_campfire"
+					criterion: ""
+					id: "5200A771CC33DDD7"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["710344B0D7FBA782"]
+			id: "216383188B2931DE"
 			tasks: [{
 				advancement: "farmersdelight:main/eat_comfort_food"
 				criterion: ""
-				id: "4FA78C576E1E5E61"
+				id: "5048958081DCB67C"
 				type: "advancement"
 			}]
-			x: -2.0d
-			y: 6.0d
+			x: 0.0d
+			y: -12.0d
 		}
 		{
-			dependencies: ["77917BE88440FA00"]
-			id: "5E2F44ACAECE0380"
-			tasks: [{
-				advancement: "farmersdelight:main/eat_nourishing_food"
-				criterion: ""
-				id: "3C16C39D1901D9A2"
-				type: "advancement"
-			}]
-			x: -2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["5E2F44ACAECE0380"]
-			id: "4337BC5A29CF594E"
+			dependencies: [
+				"0D9405C095E1AE05"
+				"216383188B2931DE"
+			]
+			id: "4A00694C26C55754"
 			tasks: [{
 				advancement: "farmersdelight:main/place_feast"
 				criterion: ""
-				id: "1CB9EF13563B42A9"
+				id: "78FA5D8076020AB0"
 				type: "advancement"
 			}]
-			x: -2.0d
-			y: 10.0d
+			x: 0.0d
+			y: -14.0d
 		}
 		{
-			dependencies: ["4337BC5A29CF594E"]
-			id: "77F5C1694098F04F"
+			dependencies: ["4A00694C26C55754"]
+			id: "3ECCFCB2481C8BF6"
+			size: 1.25d
 			tasks: [{
 				advancement: "farmersdelight:main/master_chef"
 				criterion: ""
-				id: "7AEB9E9BE9C04BF6"
+				id: "04577E08B6D45AE9"
 				type: "advancement"
 			}]
-			x: -2.0d
-			y: 12.0d
+			x: 0.0d
+			y: -16.0d
 		}
 		{
-			dependencies: ["482AD3682F99A489"]
-			id: "07BBF798F16E7867"
+			dependencies: ["710344B0D7FBA782"]
+			id: "0D9405C095E1AE05"
+			tasks: [{
+				advancement: "farmersdelight:main/eat_nourishing_food"
+				criterion: ""
+				id: "388C983AAE93D6A9"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2EAC03F39F4B9DA6"]
+			id: "14C3A30A0BE1689F"
+			tasks: [{
+				advancement: "farmersdelight:main/use_cutting_board"
+				criterion: ""
+				id: "75FAC7FFB761A0FF"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["14C3A30A0BE1689F"]
+			id: "5531DBC8D00FCC05"
 			tasks: [{
 				advancement: "farmersdelight:main/obtain_netherite_knife"
 				criterion: ""
-				id: "38DBDB3D60DB4E58"
+				id: "4297F87B51B08923"
 				type: "advancement"
 			}]
-			x: -6.0d
-			y: -2.0d
+			x: 4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2EAC03F39F4B9DA6"]
+			id: "27F43B0ADAC07C61"
+			tasks: [{
+				id: "74CB2BF6EC7BF59E"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			id: "2C1F1B66930761C3"
+			tasks: [{
+				id: "58871EA8BAAA7528"
+				type: "custom"
+			}]
+			x: 9.0d
+			y: -6.0d
 		}
 	]
 }

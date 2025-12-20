@@ -1,10 +1,10 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "bstofrage_drawers"
-	group: "1391A5B01441C2B0"
-	id: "28C90797D60321DB"
-	order_index: 2
+	filename: "6fishing"
+	group: "216429D7B624FFA8"
+	id: "03B1BD8CFA8D575B"
+	order_index: 11
 	quest_links: [ ]
 	quests: [ ]
 }

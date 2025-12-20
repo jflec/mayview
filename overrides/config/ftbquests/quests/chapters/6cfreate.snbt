@@ -4,8 +4,11 @@
 	default_quest_shape: ""
 	filename: "6cfreate"
 	group: "76673E7EF2CBE1DD"
+	icon: {
+		id: "create:crafting_blueprint"
+	}
 	id: "1F656FED233BB50F"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -576,7 +579,7 @@
 			tasks: [{
 				count: 6L
 				id: "150EBB1F8531A123"
-				item: { count: 6, id: "minecraft:dried_kelp" }
+				item: { count: 1, id: "minecraft:dried_kelp" }
 				type: "item"
 			}]
 			x: 2.0d

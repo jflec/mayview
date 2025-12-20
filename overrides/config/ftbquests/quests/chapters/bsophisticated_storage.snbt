@@ -3,9 +3,12 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "bsophisticated_storage"
-	group: "1391A5B01441C2B0"
+	group: "216429D7B624FFA8"
+	icon: {
+		id: "sophisticatedbackpacks:gold_backpack"
+	}
 	id: "57979355E8B78E96"
-	order_index: 1
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{

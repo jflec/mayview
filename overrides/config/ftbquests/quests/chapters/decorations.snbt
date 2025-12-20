@@ -2,9 +2,12 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "decorations"
-	group: ""
+	group: "216429D7B624FFA8"
+	icon: {
+		id: "handcrafted:yellow_sheet"
+	}
 	id: "7AA541E7B4C340DF"
-	order_index: 0
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
@@ -21,7 +24,7 @@
 			id: "1BC47CB96D8FE4B9"
 			tasks: [{
 				id: "14C73FFB86E7D979"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:chairs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -32,7 +35,7 @@
 			id: "70B0582ABD4E4F7C"
 			tasks: [{
 				id: "7C71C90CED314D7D"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:shelves)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -43,7 +46,7 @@
 			id: "2CDAC0C55A09741B"
 			tasks: [{
 				id: "5D8AFBE60E17D248"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:tables)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -54,7 +57,7 @@
 			id: "70D09951B4872235"
 			tasks: [{
 				id: "7B5001A4CEFEE062"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:stools)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -65,7 +68,7 @@
 			id: "6726542348FAE313"
 			tasks: [{
 				id: "7AFCCA66CD824446"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:shutters)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -76,7 +79,7 @@
 			id: "79F942CC9C619D03"
 			tasks: [{
 				id: "088BA68C0A92D79F"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:flower_boxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -87,7 +90,7 @@
 			id: "60E1C289E4569BC8"
 			tasks: [{
 				id: "30212B4334563123"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:curtains)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -98,7 +101,7 @@
 			id: "5E94DEE4A4E894B3"
 			tasks: [{
 				id: "72536B338A3536C6"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:benches)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -109,7 +112,7 @@
 			id: "61DD0A965A19CB74"
 			tasks: [{
 				id: "5245A5C57D4B65C0"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:drawers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -120,7 +123,7 @@
 			id: "5B83A95716BA6574"
 			tasks: [{
 				id: "7CE72DA7861680C9"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:lamps)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -131,7 +134,7 @@
 			id: "608469B7D54DCF1D"
 			tasks: [{
 				id: "7FE0B537C0752CB4"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:sofas)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -142,7 +145,7 @@
 			id: "6E92BA5FB284EE90"
 			tasks: [{
 				id: "1285DDDD3CC35B17"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:tall_stools)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -153,7 +156,7 @@
 			id: "2048C38357DF3AF7"
 			tasks: [{
 				id: "75D2C56F68C8D0CA"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(another_furniture:furniture_hammers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbquests:missing_item": "ftbfiltersystem:smart_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 0.0d

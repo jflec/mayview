@@ -1,0 +1,233 @@
+{
+	autofocus_id: "05366D4A29A19DC4"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cmedficine"
+	group: "379FE802613ABCBC"
+	icon: {
+		id: "cobblemon:tamato_berry"
+	}
+	id: "658F5D98B4E8187C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "05366D4A29A19DC4"
+			size: 1.5d
+			tasks: [{
+				advancement: "cobblemon:any_plant"
+				criterion: ""
+				id: "673B00B582FD5A4D"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05366D4A29A19DC4"]
+			id: "618948AD5D006BEE"
+			tasks: [{
+				advancement: "cobblemon:obtain_mint"
+				criterion: ""
+				id: "3914B3067CB471D8"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["618948AD5D006BEE"]
+			id: "4DB15A7404EF90F7"
+			tasks: [{
+				advancement: "cobblemon:obtain_all_mints"
+				criterion: ""
+				id: "41644E21488BA21C"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["05366D4A29A19DC4"]
+			id: "643FD075003B1EF9"
+			tasks: [{
+				advancement: "cobblemon:obtain_big_root"
+				criterion: ""
+				id: "23DB10A8658213C3"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["643FD075003B1EF9"]
+			id: "74AAEFB03EB9BBA1"
+			tasks: [{
+				advancement: "cobblemon:craft_remedy"
+				criterion: ""
+				id: "4DE66E97EFE23529"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["05366D4A29A19DC4"]
+			id: "4125C17373A1EDD7"
+			tasks: [{
+				advancement: "cobblemon:obtain_leek"
+				criterion: ""
+				id: "4000ECF4FF0B1DD2"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["05366D4A29A19DC4"]
+			id: "0CDC894AF1FB12D2"
+			tasks: [{
+				advancement: "cobblemon:obtain_berry"
+				criterion: ""
+				id: "3369366886A69971"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["05366D4A29A19DC4"]
+			id: "0589185C5E807A7A"
+			tasks: [{
+				advancement: "cobblemon:obtain_revival_herb"
+				criterion: ""
+				id: "328408153ECA7CE1"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0589185C5E807A7A"]
+			id: "50961825E41A9025"
+			tasks: [{
+				advancement: "cobblemon:use_revive"
+				criterion: ""
+				id: "4BE81A09D06A5821"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50961825E41A9025"]
+			id: "45BE08225DC1B151"
+			size: 1.0d
+			tasks: [{
+				advancement: "cobblemon:healing_machine"
+				criterion: ""
+				id: "5569E71600495BAB"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4125C17373A1EDD7"]
+			id: "3F989B71A793D432"
+			tasks: [{
+				advancement: "cobblemon:medicinal_brew"
+				criterion: ""
+				id: "33380C032673F973"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3F989B71A793D432"]
+			id: "1016044DA4C75D79"
+			tasks: [{
+				advancement: "cobblemon:brew_potion"
+				criterion: ""
+				id: "75B088CB048C11C7"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1016044DA4C75D79"]
+			id: "68F532B4D0651178"
+			tasks: [{
+				advancement: "cobblemon:brew_full_restore"
+				criterion: ""
+				id: "3EB102E780B5DDC2"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["68F532B4D0651178"]
+			id: "438F9E4A3C4041B2"
+			size: 1.25d
+			tasks: [{
+				advancement: "cobblemon:brew_all"
+				criterion: ""
+				id: "6B36ED8B751737E2"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0CDC894AF1FB12D2"]
+			id: "1F50EFCE0B47FB81"
+			tasks: [{
+				advancement: "cobblemon:obtain_mutated_berry"
+				criterion: ""
+				id: "30D7233BA72DD7E2"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1F50EFCE0B47FB81"]
+			id: "54DB4D7D7F675BA6"
+			tasks: [{
+				advancement: "cobblemon:obtain_all_berries"
+				criterion: ""
+				id: "2BC614CAE9142D91"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["05366D4A29A19DC4"]
+			id: "0AE4B16C28832A83"
+			tasks: [{
+				advancement: "cobblemon:slather_saccharine"
+				criterion: ""
+				id: "698FDD3D29E7CE17"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0AE4B16C28832A83"]
+			id: "37A9231339223971"
+			tasks: [{
+				advancement: "cobblemon:cook_snack"
+				criterion: ""
+				id: "20CF4498C5928AD7"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+	]
+}
