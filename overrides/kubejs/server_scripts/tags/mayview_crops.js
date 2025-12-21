@@ -3,7 +3,7 @@ ServerEvents.tags("block", (event) => {
     "minecraft:beetroots",
     "minecraft:melon_stem",
     "minecraft:pumpkin_stem",
-    "minecraft:torchflower",
+    "minecraft:torchflower_crop",
     "minecraft:wheat",
     "minecraft:potatoes",
     "minecraft:carrots",

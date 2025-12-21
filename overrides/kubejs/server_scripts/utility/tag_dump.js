@@ -5,7 +5,7 @@
 //     dumpedSeeds = true;
 
 //     console.log("==== Dumping all items ====");
-//     Ingredient.of("#mayview:low_med_foods").itemIds.forEach((id) => {
+//     Ingredient.of("#minecraft:logs").itemIds.forEach((id) => {
 //       console.log(id);
 //     });
 //     console.log("==== dump complete ====");

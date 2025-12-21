@@ -22,19 +22,3 @@ cookHouseTaiga = 4
 # Default: 4
 # Range: 0 ~ 100
 chefHouseTaiga = 4
-#Cook House Savanna
-# Default: 2
-# Range: 0 ~ 100
-cookHouseSavanna = 2
-#Chef House Savanna
-# Default: 4
-# Range: 0 ~ 100
-chefHouseSavanna = 4
-#Cook House Snowy
-# Default: 1
-# Range: 0 ~ 100
-cookHouseSnowy = 1
-#Chef House Snowy
-# Default: 4
-# Range: 0 ~ 100
-chefHouseSnowy = 4

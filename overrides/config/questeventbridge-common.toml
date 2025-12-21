@@ -1,0 +1,47 @@
+#===============================================
+#  Quest Event Bridge — Common Configuration
+#
+#  This file controls how gameplay events are
+#  translated into persistent player data for
+#  use by FTB Quests and other systems.
+#
+#===============================================
+[trade_tracking]
+	#NBT key prefix used when tracking villager trades.
+	#
+	#Format:
+	#  <prefix><profession_id>
+	#
+	#Example:
+	#  mayview.trade.minecraft:librarian
+	#
+	#Changing this will NOT reset existing data automatically.
+	#If you change it, old values will remain under the old prefix.
+	#
+	trade_key_prefix = "mayview.trade."
+
+[debug]
+	#
+	#Enable verbose logging for captured events.
+	#
+	#When enabled, the bridge will log each
+	#captured event and its resolved data.
+	#
+	#Warning:
+	#This can get noisy on active servers.
+	#
+	log_events = false
+	#
+	#Permission level required to use /qeb commands.
+	#
+	#Typical values:
+	#  0 = everyone
+	#  2 = server operators (recommended)
+	#  4 = owners-only / highest
+	#
+	#Note:
+	#Changing this requires a /reload or server restart to be safe.
+	#Commands will read this value at runtime.
+	# Default: 2
+	# Range: 0 ~ 4
+	command_permission_level = 2
