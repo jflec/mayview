@@ -17,7 +17,7 @@ function PlantSixteenCrops() {
     if (held.isEmpty()) return;
 
     if (!block.hasTag("c:farmland")) return;
-    if (!held.hasTag("minecraft:villager_plantable_seeds")) return;
+    if (!held.hasTag("mayview:seeds")) return;
 
     const pos = block.pos;
     const beforeAboveId = level.getBlock(pos.x, pos.y + 1, pos.z).id;

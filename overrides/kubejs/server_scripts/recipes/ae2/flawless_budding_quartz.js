@@ -1,28 +1,3 @@
-ServerEvents.tags("item", (e) => {
-  e.add("c:foods/dough", "create:dough");
-});
-
-ServerEvents.recipes((event) => {
-  event.shaped(Item.of("dailyshop:daily_shop", 1), ["WWW", "F F", "PPP"], {
-    W: "#minecraft:wool",
-    F: "#minecraft:fences",
-    P: "#minecraft:planks",
-  });
-});
-
-ServerEvents.recipes((event) => {
-  const recipe = {
-    type: "ae2:charger",
-    ingredient: [{ item: "minecraft:quartz" }],
-    result: {
-      id: "ae2:certus_quartz_crystal",
-      count: 1,
-    },
-  };
-
-  event.custom(recipe);
-});
-
 ServerEvents.recipes((event) => {
   const recipe = {
     type: "create:mechanical_crafting",
