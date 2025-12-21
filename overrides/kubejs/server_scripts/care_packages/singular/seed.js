@@ -1,42 +1,28 @@
 const SEED_CARE_PACKAGE_BLOCK_ID = "kubejs:seed_care_package";
 
-const SEED_CARE_PACKAGE_ITEM_IDS = [
-  "minecraft:wheat_seeds",
-  "minecraft:beetroot_seeds",
-  "minecraft:pumpkin_seeds",
-  "minecraft:melon_seeds",
-  "minecraft:torchflower_seeds",
-  "farmersdelight:cabbage_seeds",
-  "farmersdelight:tomato_seeds",
-  "farm_and_charm:barley_seeds",
-  "farm_and_charm:lettuce_seeds",
-  "farm_and_charm:oat_seeds",
-  "farm_and_charm:strawberry_seeds",
-  "farm_and_charm:tomato_seeds",
-  "cobblemon:blue_mint_seeds",
-  "cobblemon:cyan_mint_seeds",
-  "cobblemon:green_mint_seeds",
-  "cobblemon:pink_mint_seeds",
-  "cobblemon:red_mint_seeds",
-  "cobblemon:white_mint_seeds",
-  "cobblemon:vivichoke_seeds",
-  "biomeswevegone:pale_pumpkin_seeds",
-  "brewery:hops_seeds",
-  "vinery:red_grape_seeds",
-  "vinery:white_grape_seeds",
-];
-
 BlockEvents.rightClicked(SEED_CARE_PACKAGE_BLOCK_ID, (event) => {
-  let { player, block, level, server } = event;
+  var player = event.player;
+  var block = event.block;
+  var level = event.level;
+  var server = event.server;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  const count = randInt(2, 3);
-  const chosen = pickRandomUnique(SEED_CARE_PACKAGE_ITEM_IDS, count);
+  var tagList = Ingredient.of("#mayview:seeds").itemIds;
+  var seeds = toJsStringArray(tagList);
 
-  for (let i = 0; i < chosen.length; i++) {
+  seeds = seeds.filter((id) => id && id !== "");
+
+  if (seeds.length === 0) return;
+
+  var count = randInt(2, 3);
+  var chosen = pickRandomUniqueValid(seeds, count);
+
+  if (chosen.length < 2) return;
+
+  for (var i = 0; i < chosen.length; i++) {
     block.popItem(Item.of(chosen[i], 1));
   }
 
@@ -52,21 +38,35 @@ BlockEvents.rightClicked(SEED_CARE_PACKAGE_BLOCK_ID, (event) => {
   block.set("minecraft:air");
 });
 
+function toJsStringArray(javaList) {
+  var out = [];
+  if (!javaList) return out;
+
+  javaList.forEach((id) => out.push(String(id)));
+  return out;
+}
+
 function randInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function pickRandomUnique(list, count) {
-  if (!Array.isArray(list) || list.length === 0) return [];
+function pickRandomUniqueValid(list, count) {
+  var pool = list.slice();
+  var picked = [];
 
-  const pool = list.slice();
-  const picked = [];
+  var idx, id;
 
-  const n = Math.min(count, pool.length);
-  for (let i = 0; i < n; i++) {
-    const idx = Math.floor(Math.random() * pool.length);
-    picked.push(pool[idx]);
+  while (picked.length < count && pool.length > 0) {
+    idx = Math.floor(Math.random() * pool.length);
+    id = pool[idx];
     pool.splice(idx, 1);
+
+    if (!id) continue;
+
+    try {
+      Item.of(id, 1);
+      picked.push(id);
+    } catch (e) {}
   }
 
   return picked;

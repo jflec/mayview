@@ -1,165 +1,42 @@
 const FOOD_CARE_PACKAGE_BLOCK_ID = "kubejs:food_care_package";
 
-const LOW_FOODS = [
-  "biomeswevegone:baobab_fruit",
-  "biomeswevegone:blueberries",
-  "biomeswevegone:yucca_fruit",
-  "biomeswevegone:aloe_vera_juice",
-  "biomeswevegone:green_apple",
-  "biomeswevegone:soul_fruit",
-  "biomeswevegone:cooked_white_puffball_cap",
+const FOOD_BUCKET_TAGS = {
+  LOW_LOW_FOODS: "mayview:low_low_foods",
+  MED_LOW_FOODS: "mayview:med_low_foods",
+  HIGH_LOW_FOODS: "mayview:high_low_foods",
 
-  "brewinandchewin:jerky",
-  "brewinandchewin:kimchi",
-  "brewinandchewin:pickled_pickles",
-  "brewinandchewin:cocoa_fudge",
-  "brewinandchewin:flaxen_cheese_wedge",
-  "brewinandchewin:scarlet_cheese_wedge",
+  LOW_MED_FOODS: "mayview:low_med_foods",
+  MED_MED_FOODS: "mayview:med_med_foods",
+  HIGH_MED_FOODS: "mayview:high_med_foods",
 
-  "cobblemon:lava_cookie",
-  "cobblemon:ponigiri",
-  "cobblemon:roasted_leek",
-  "cobblemon:tasty_tail",
-  "cobblemon:sweet_apple",
-  "cobblemon:syrupy_apple",
-  "cobblemon:tart_apple",
-  "cobblemon:lumiose_galette",
-  "cobblemon:potato_mochi",
-
-  "create:builders_tea",
-  "create:bar_of_chocolate",
-
-  "endersdelight:mite_crust",
-  "endersdelight:shulker_filet",
-  "endersdelight:shulker_mollusk",
-
-  "farmersdelight:cabbage",
-  "farmersdelight:cabbage_leaf",
-  "farmersdelight:chicken_cuts",
-  "farmersdelight:cod_slice",
-  "farmersdelight:salmon_slice",
-  "farmersdelight:mutton_chops",
-  "farmersdelight:raw_pasta",
-  "farmersdelight:wheat_dough",
-  "farmersdelight:tomato",
-  "farmersdelight:onion",
-
-  "minecraft:cookie",
-  "minecraft:sweet_berries",
-  "minecraft:dried_kelp",
-  "minecraft:potato",
-  "minecraft:apple",
-  "minecraft:beetroot",
-  "minecraft:melon_slice",
-  "minecraft:rotten_flesh",
-  "minecraft:spider_eye",
-];
-
-const MED_FOODS = [
-  "biomeswevegone:cooked_oddion_bulb",
-  "biomeswevegone:cooked_yucca_fruit",
-  "biomeswevegone:green_apple_pie",
-  "biomeswevegone:blueberry_pie",
-
-  "brewinandchewin:pizza_slice",
-  "brewinandchewin:apple_jelly",
-  "brewinandchewin:glow_berry_marmalade",
-  "brewinandchewin:sweet_berry_jam",
-  "brewinandchewin:kippers",
-  "brewinandchewin:ham_and_cheese_sandwich",
-
-  "cobblemon:leek_and_potato_stew",
-  "cobblemon:berry_sweet",
-  "cobblemon:clover_sweet",
-  "cobblemon:flower_sweet",
-  "cobblemon:love_sweet",
-  "cobblemon:ribbon_sweet",
-  "cobblemon:star_sweet",
-  "cobblemon:strawberry_sweet",
-  "cobblemon:big_malasada",
-  "cobblemon:jubilife_muffin",
-  "cobblemon:pewter_crunchies",
-  "cobblemon:casteliacone",
-  "cobblemon:open_faced_sandwich",
-  "cobblemon:whipped_dream",
-
-  "create:sweet_roll",
-  "create:chocolate_glazed_berries",
-  "create:honeyed_apple",
-
-  "endersdelight:chorus_stew",
-  "endersdelight:endermite_stew",
-  "endersdelight:uncanny_cookies",
-
-  "farmersdelight:fried_egg",
-  "farmersdelight:cooked_bacon",
-  "farmersdelight:bone_broth",
-  "farmersdelight:beef_patty",
-  "farmersdelight:cooked_chicken_cuts",
-  "farmersdelight:cooked_cod_slice",
-  "farmersdelight:cooked_mutton_chops",
-  "farmersdelight:cooked_salmon_slice",
-
-  "minecraft:bread",
-  "minecraft:baked_potato",
-  "minecraft:cooked_cod",
-  "minecraft:cooked_rabbit",
-  "minecraft:mushroom_stew",
-  "minecraft:beetroot_soup",
-  "minecraft:pumpkin_pie",
-];
-
-const HIGH_FOODS = [
-  "biomeswevegone:allium_oddion_soup",
-  "biomeswevegone:white_puffball_stew",
-
-  "brewinandchewin:cheesy_pasta",
-  "brewinandchewin:fiery_fondue",
-  "brewinandchewin:horror_lasagna",
-  "brewinandchewin:scarlet_pierogi",
-  "brewinandchewin:creamy_onion_soup",
-  "brewinandchewin:vegetable_omelet",
-
-  "cobblemon:smoked_tail_curry",
-  "cobblemon:vivichoke_dip",
-
-  "farmersdelight:baked_cod_stew",
-  "farmersdelight:chicken_soup",
-  "farmersdelight:beef_stew",
-  "farmersdelight:fish_stew",
-  "farmersdelight:vegetable_soup",
-  "farmersdelight:pumpkin_soup",
-  "farmersdelight:noodle_soup",
-
-  "mynethersdelight:egg_soup",
-  "mynethersdelight:rock_soup",
-  "mynethersdelight:spicy_noodle_soup",
-
-  "minecraft:rabbit_stew",
-  "minecraft:golden_carrot",
-];
+  LOW_HIGH_FOODS: "mayview:low_high_foods",
+  MED_HIGH_FOODS: "mayview:med_high_foods",
+  HIGH_HIGH_FOODS: "mayview:high_high_foods",
+};
 
 BlockEvents.rightClicked(FOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
-  let { player, block, level, server } = event;
+  var player = event.player;
+  var block = event.block;
+  var level = event.level;
+  var server = event.server;
 
   if (level.isClientSide()) return;
   if (!player.isCrouching()) return;
   if (!player.mainHandItem.isEmpty()) return;
 
-  const lows = pickRandomUnique(LOW_FOODS, 2);
-  const meds = pickRandomUnique(MED_FOODS, 1);
-  const highs = pickRandomUnique(HIGH_FOODS, 1);
+  var hungerTiers = ["LOW", "MED", "HIGH"];
 
-  for (let i = 0; i < lows.length; i++) {
-    block.popItem(Item.of(lows[i], randInt(3, 5)));
+  for (var i = 0; i < hungerTiers.length; i++) {
+    dropOneFromBucketTag(block, hungerTiers[i] + "_LOW_FOODS");
   }
 
-  for (let i = 0; i < meds.length; i++) {
-    block.popItem(Item.of(meds[i], randInt(2, 3)));
+  for (var j = 0; j < hungerTiers.length; j++) {
+    if (coinFlip()) dropOneFromBucketTag(block, hungerTiers[j] + "_MED_FOODS");
   }
 
-  if (highs.length) {
-    block.popItem(Item.of(highs[0], 1));
+  for (var k = 0; k < hungerTiers.length; k++) {
+    if (chance(1 / 3))
+      dropOneFromBucketTag(block, hungerTiers[k] + "_HIGH_FOODS");
   }
 
   global.CarePackageFX.generic(
@@ -174,21 +51,54 @@ BlockEvents.rightClicked(FOOD_CARE_PACKAGE_BLOCK_ID, (event) => {
   block.set("minecraft:air");
 });
 
-function randInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function dropOneFromBucketTag(block, bucketName) {
+  var tagId = FOOD_BUCKET_TAGS[bucketName];
+  if (!tagId) return;
+
+  var javaList = Ingredient.of("#" + tagId).itemIds;
+  var list = toJsStringArray(javaList).filter((id) => id && id !== "");
+
+  if (!list.length) return;
+
+  var picked = pickRandomUniqueValid(list, 1);
+  if (!picked.length) return;
+
+  block.popItem(Item.of(picked[0], 1));
 }
 
-function pickRandomUnique(list, count) {
-  if (!Array.isArray(list) || list.length === 0) return [];
+function toJsStringArray(javaList) {
+  var out = [];
+  if (!javaList) return out;
 
-  const pool = list.slice();
-  const picked = [];
+  javaList.forEach((id) => out.push(String(id)));
+  return out;
+}
 
-  const n = Math.min(count, pool.length);
-  for (let i = 0; i < n; i++) {
-    const index = Math.floor(Math.random() * pool.length);
-    picked.push(pool[index]);
-    pool.splice(index, 1);
+function chance(p) {
+  return Math.random() < p;
+}
+
+function coinFlip() {
+  return chance(0.5);
+}
+
+function pickRandomUniqueValid(list, count) {
+  var pool = list.slice();
+  var picked = [];
+
+  var idx, id;
+
+  while (picked.length < count && pool.length > 0) {
+    idx = Math.floor(Math.random() * pool.length);
+    id = pool[idx];
+    pool.splice(idx, 1);
+
+    if (!id) continue;
+
+    try {
+      Item.of(id, 1);
+      picked.push(id);
+    } catch (e) {}
   }
 
   return picked;
