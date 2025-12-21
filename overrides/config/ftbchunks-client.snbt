@@ -133,39 +133,51 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:chicken": true
-			"cobblemon:pokemon": true
-			"minecraft:zombie_villager": true
-			"minecraft:zombie": true
-			"minecraft:bat": true
-			"artifacts:mimic": true
-			"minecraft:spider": true
-			"minecraft:horse": true
-			"minecraft:sheep": true
-			"minecraft:creeper": true
-			"minecraft:slime": true
-			"minecraft:fox": true
-			"creeperoverhaul:cave_creeper": true
-			"minecraft:squid": true
-			"minecraft:bee": true
-			"minecraft:axolotl": true
-			"minecraft:enderman": true
-			"creeperoverhaul:dripstone_creeper": true
-			"minecraft:goat": true
-			"minecraft:armadillo": true
-			"minecraft:drowned": true
-			"minecraft:tropical_fish": false
-			"minecraft:cat": true
 			"minecraft:salmon": false
-			"minecraft:cow": true
-			"minecraft:rabbit": true
 			"minecraft:glow_squid": true
+			"minecraft:enderman": true
+			"minecraft:zombie_villager": true
+			"minecraft:chicken": true
 			"minecraft:skeleton": true
-			"minecraft:phantom": true
-			"minecraft:villager": true
-			"minecraft:iron_golem": true
+			"minecraft:zombie": true
+			"minecraft:spider": true
+			"golemoverhaul:hay_golem": true
+			"minecraft:goat": true
+			"ghosts:ghost": true
+			"crittersandcompanions:koi_fish": true
 			"minecraft:pig": true
+			"minecraft:cat": true
+			"minecraft:villager": true
+			"minecraft:horse": true
+			"crittersandcompanions:jumping_spider": true
+			"minecraft:fox": true
+			"golemoverhaul:honey_golem": true
+			"golemoverhaul:barrel_golem": true
+			"minecraft:iron_golem": true
+			"creeperoverhaul:cave_creeper": true
+			"minecraft:armadillo": true
+			"minecraft:tropical_fish": false
+			"golemoverhaul:slime_golem": true
+			"minecraft:drowned": true
+			"minecraft:axolotl": true
+			"golemoverhaul:candle_golem": true
+			"minecraft:bat": true
+			"minecraft:squid": true
+			"ghosts:small_ghost": true
 			"minecraft:witch": true
+			"cobblemon:pokemon": true
+			"crittersandcompanions:otter": true
+			"minecraft:rabbit": true
+			"minecraft:sheep": true
+			"minecraft:cow": true
+			"artifacts:mimic": true
+			"minecraft:slime": true
+			"golemoverhaul:netherite_golem": true
+			"minecraft:bee": true
+			"creeperoverhaul:dripstone_creeper": true
+			"minecraft:trader_llama": true
+			"minecraft:creeper": true
+			"minecraft:phantom": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

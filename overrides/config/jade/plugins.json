@@ -67,6 +67,9 @@
     "entity": true,
     "entity_variant": true
   },
+  "ftbquests": {
+    "barrier": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,

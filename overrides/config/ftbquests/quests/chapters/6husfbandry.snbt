@@ -11,904 +11,244 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "4188AF008CAADB44"
-			tasks: [{
-				id: "0FFC81993B9E9F0E"
-				type: "checkmark"
-			}]
+			id: "1B15C04E8D6B155E"
+			size: 1.5d
+			tasks: [
+				{
+					count: 15L
+					id: "62A6AE2B5C0CA7FE"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:fences)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6BCA1B93618AF0B5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:fence_gates)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0EE10BBCD29C6DAB"]
-			id: "6AA934D582E6E8BA"
-			tasks: [{
-				advancement: "herbalbrews:main/find_tea_blossom"
-				criterion: ""
-				id: "73F282203D79B7E1"
-				type: "advancement"
+			dependencies: ["1B15C04E8D6B155E"]
+			id: "4A72698C2DA00E38"
+			rewards: [{
+				count: 2
+				id: "01DC66C419C0D0F9"
+				item: {
+					count: 1
+					id: "minecraft:slime_ball"
+				}
+				type: "item"
 			}]
-			x: -2.0d
-			y: -5.0d
+			tasks: [
+				{
+					icon: {
+						id: "minecraft:oak_fence"
+					}
+					id: "379F871E52F24C28"
+					type: "custom"
+				}
+				{
+					icon: {
+						id: "minecraft:oak_fence_gate"
+					}
+					id: "38CAC70B8CA25B27"
+					type: "custom"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0EE10BBCD29C6DAB"]
-			id: "53F49226972E4941"
-			tasks: [{
-				advancement: "herbalbrews:main/place_tea_kettle"
-				criterion: ""
-				id: "762F9C2B3AF0D1CC"
-				type: "advancement"
-			}]
+			dependencies: ["4A72698C2DA00E38"]
+			id: "6F300AB7EDDA339A"
+			tasks: [
+				{
+					id: "439BBDD5F1B57F5F"
+					item: { count: 1, id: "minecraft:lead" }
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:lead"
+					}
+					id: "6EF1A122A946BC29"
+					type: "custom"
+				}
+			]
 			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6F300AB7EDDA339A"]
+			id: "48C295A1770FFDAE"
+			tasks: [{
+				count: 8L
+				id: "0448A16E4E04A21C"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:sheep_food)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
 			y: -6.0d
 		}
 		{
-			dependencies: ["53F49226972E4941"]
-			id: "7EF3980DAD05C466"
+			dependencies: ["6F300AB7EDDA339A"]
+			id: "733B1C121138006C"
 			tasks: [{
-				advancement: "herbalbrews:main/place_jug"
-				criterion: ""
-				id: "1986B0011382C3DB"
-				type: "advancement"
+				count: 8L
+				icon: {
+					id: "farmersdelight:cabbage"
+				}
+				id: "0A4D7EEF822B0C61"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:pig_food)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
 			}]
-			x: -2.0d
-			y: -7.0d
+			x: 1.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["7EF3980DAD05C466"]
-			id: "4CD1C4A7539EC644"
+			dependencies: ["6F300AB7EDDA339A"]
+			id: "1D24E12FD9C9AA73"
 			tasks: [{
-				advancement: "herbalbrews:main/all_effects"
-				criterion: ""
-				id: "46474278FD06A2A7"
-				type: "advancement"
+				count: 8L
+				icon: {
+					id: "minecraft:wheat_seeds"
+				}
+				id: "032C96EE9FA00455"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:chicken_food)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
 			}]
-			x: -2.0d
-			y: -10.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["53F49226972E4941"]
-			id: "2C960AEA264CC98C"
+			dependencies: ["48C295A1770FFDAE"]
+			id: "191D6C2C3E5321D9"
 			tasks: [{
-				advancement: "herbalbrews:main/craft_everything"
-				criterion: ""
-				id: "182D90E752BF98F8"
-				type: "advancement"
+				icon: {
+					id: "minecraft:cow_spawn_egg"
+				}
+				id: "336B70BEDF760BA9"
+				type: "custom"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: -8.0d
 		}
 		{
-			dependencies: ["53F49226972E4941"]
-			id: "39237270BE46E0CE"
+			dependencies: ["733B1C121138006C"]
+			id: "2DBE0EE08AB183D1"
 			tasks: [{
-				advancement: "herbalbrews:main/drink_coffee"
-				criterion: ""
-				id: "3255FB920EA1E509"
-				type: "advancement"
+				icon: {
+					id: "minecraft:pig_spawn_egg"
+				}
+				id: "3112AFAE532AFAF5"
+				type: "custom"
 			}]
-			x: 2.0d
-			y: -7.0d
+			x: 1.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["6AA934D582E6E8BA"]
-			id: "43D937AE87907FD4"
+			dependencies: ["1D24E12FD9C9AA73"]
+			id: "225B8742DA65C398"
 			tasks: [{
-				advancement: "herbalbrews:main/find_lavender"
-				criterion: ""
-				id: "58C42F58F1E01038"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["6AA934D582E6E8BA"]
-			id: "32E8575DDFF8CBD7"
-			tasks: [{
-				advancement: "herbalbrews:main/let_it_dry"
-				criterion: ""
-				id: "772F4B47842203C1"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["32E8575DDFF8CBD7"]
-			id: "0885809B26525743"
-			tasks: [{
-				advancement: "herbalbrews:main/let_it_dry_2"
-				criterion: ""
-				id: "099D2A4EAC6E19E9"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["0885809B26525743"]
-			id: "250DF11541EA301A"
-			tasks: [{
-				advancement: "herbalbrews:main/let_it_dry_3"
-				criterion: ""
-				id: "202E097CDB5DE9D3"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: -11.0d
-		}
-		{
-			dependencies: ["2BB3B7C330A77CCE"]
-			id: "1C536649C1735003"
-			tasks: [{
-				advancement: "herbalbrews:main/witching_time"
-				criterion: ""
-				id: "1574950EB29957B7"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["39237270BE46E0CE"]
-			id: "12B1D6D6C08D78C8"
-			tasks: [{
-				advancement: "herbalbrews:main/drink_milk_coffee"
-				criterion: ""
-				id: "3E523AE858F06B99"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: -9.0d
-		}
-		{
-			id: "0EE10BBCD29C6DAB"
-			tasks: [{
-				advancement: "herbalbrews:main/place_stove"
-				criterion: ""
-				id: "43B35BD1C80B10AF"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["0EE10BBCD29C6DAB"]
-			id: "2BB3B7C330A77CCE"
-			tasks: [{
-				advancement: "herbalbrews:main/place_cauldron"
-				criterion: ""
-				id: "04AC6DBF10CC0DD4"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2BB3B7C330A77CCE"]
-			id: "4CA77AC71943C094"
-			tasks: [{
-				advancement: "herbalbrews:main/get_a_flask"
-				criterion: ""
-				id: "4BCA05EAFED4BEC7"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: -7.0d
-		}
-		{
-			id: "0E787D215E78A98C"
-			tasks: [{
-				advancement: "brewery:main/brewing_pioneer"
-				criterion: ""
-				id: "031C2BB7989903DA"
-				type: "advancement"
+				icon: {
+					id: "minecraft:chicken_spawn_egg"
+				}
+				id: "5DA14EFCCDE9C358"
+				type: "custom"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["0E787D215E78A98C"]
-			id: "657FF58FB2BC8178"
+			dependencies: ["48C295A1770FFDAE"]
+			id: "3DD42624E7B6644C"
 			tasks: [{
-				advancement: "brewery:main/copper_brewmaster"
-				criterion: ""
-				id: "5E867D4A2C330060"
-				type: "advancement"
+				icon: {
+					id: "minecraft:sheep_spawn_egg"
+				}
+				id: "2FACAE3E4E3C808D"
+				type: "custom"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: -1.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["657FF58FB2BC8178"]
-			id: "4E2A2360097D1DBB"
+			dependencies: ["191D6C2C3E5321D9"]
+			id: "4476191A3094FB72"
 			tasks: [{
-				advancement: "brewery:main/netherite_brewmaster"
-				criterion: ""
-				id: "377881E1ABACD3D4"
-				type: "advancement"
-			}]
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4E2A2360097D1DBB"]
-			id: "113D7F2A19D83AB0"
-			tasks: [{
-				id: "768B45FB712D39C9"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(brewinandchewin:fermented_drinks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["113D7F2A19D83AB0"]
-			id: "706364A5BE715425"
-			tasks: [{
-				id: "2F2708EB4AFDDB61"
-				item: { count: 1, id: "brewery:whiskey_carrasconlabel" }
-				type: "item"
-			}]
-			x: 11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0E787D215E78A98C"]
-			id: "48A625A5D3F7E6BD"
-			tasks: [{
-				advancement: "brewery:main/wild_crops"
-				criterion: ""
-				id: "783D4473FCED4CBA"
-				type: "advancement"
-			}]
-			x: 5.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["48A625A5D3F7E6BD"]
-			id: "5D2A16356EDA60E1"
-			tasks: [{
-				advancement: "brewery:main/crop_collector"
-				criterion: ""
-				id: "1927EF680DA516A4"
-				type: "advancement"
-			}]
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0E787D215E78A98C"]
-			id: "397BC4F0A240641E"
-			tasks: [{
-				advancement: "brewery:main/kill_beer_elemental"
-				criterion: ""
-				id: "1E1D2666FF6277A6"
-				type: "advancement"
-			}]
-			x: 5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["397BC4F0A240641E"]
-			id: "1B8922F277F1981D"
-			tasks: [{
-				advancement: "brewery:main/get_saturated"
-				criterion: ""
-				id: "2C2F6102619891FB"
-				type: "advancement"
-			}]
-			x: 7.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1B8922F277F1981D"]
-			id: "47FE7A6B40BD47B6"
-			tasks: [{
-				advancement: "brewery:main/eat_everything"
-				criterion: ""
-				id: "0DE3DDB4CC6FA872"
-				type: "advancement"
-			}]
-			x: 9.0d
-			y: 2.0d
-		}
-		{
-			id: "2A342DE7E210B697"
-			tasks: [{
-				advancement: "candlelight:main/place_stove"
-				criterion: ""
-				id: "14E8B7B5CAC7F3FA"
-				type: "advancement"
+				icon: {
+					id: "minecraft:milk_bucket"
+				}
+				id: "6A18DAE81415AC80"
+				type: "custom"
 			}]
 			x: -3.0d
-			y: 0.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["2A342DE7E210B697"]
-			id: "06EE234ADAA0390D"
+			dependencies: ["3DD42624E7B6644C"]
+			id: "570D4BEE84CE06BC"
 			tasks: [{
-				advancement: "candlelight:main/place_cooking_pot"
-				criterion: ""
-				id: "56DE18394CCABAEE"
-				type: "advancement"
+				icon: {
+					id: "minecraft:shears"
+				}
+				id: "130C9CBC6B8C373E"
+				type: "custom"
 			}]
-			x: -5.0d
-			y: -2.0d
+			x: -1.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["06EE234ADAA0390D"]
-			id: "2830BE9955D2D385"
+			dependencies: ["2DBE0EE08AB183D1"]
+			id: "21187018BB241BEC"
+			tasks: [
+				{
+					id: "30DB98E5DE7904B0"
+					item: { count: 1, id: "minecraft:saddle" }
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:saddle"
+					}
+					id: "42ACC96B69881E92"
+					type: "custom"
+				}
+			]
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["225B8742DA65C398"]
+			id: "615ED4C8B757B4B7"
 			tasks: [{
-				advancement: "candlelight:main/cook_lasagna"
-				criterion: ""
-				id: "2DCAA4B117CC6E9A"
-				type: "advancement"
+				icon: {
+					id: "minecraft:egg"
+				}
+				id: "763BC514D02929B5"
+				type: "custom"
 			}]
-			x: -7.0d
-			y: -2.0d
+			x: 3.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["06EE234ADAA0390D"]
-			id: "6C015785A57E9049"
+			dependencies: [
+				"4476191A3094FB72"
+				"570D4BEE84CE06BC"
+				"21187018BB241BEC"
+				"615ED4C8B757B4B7"
+			]
+			id: "19FBA1982E403F3F"
+			size: 1.25d
 			tasks: [{
-				advancement: "candlelight:main/cook_everything_pot"
-				criterion: ""
-				id: "7FBEDE66471A9B95"
-				type: "advancement"
-			}]
-			x: -7.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["324283F8C58284D5"]
-			id: "0791CD2913C87F24"
-			tasks: [{
-				advancement: "candlelight:main/cook_everything_pan"
-				criterion: ""
-				id: "05E8CAD91F7FE1AA"
-				type: "advancement"
-			}]
-			x: -5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["324283F8C58284D5"]
-			id: "5675DBC47F86245F"
-			tasks: [{
-				advancement: "candlelight:main/cook_beef_wellington"
-				criterion: ""
-				id: "2D12002D90A97D44"
-				type: "advancement"
-			}]
-			x: -7.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1602305896901F42"]
-			id: "5D7BCF5B5FC916A0"
-			tasks: [{
-				advancement: "candlelight:main/cook_everything_vegetable"
-				criterion: ""
-				id: "004C132E793BC993"
-				type: "advancement"
-			}]
-			x: -11.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2830BE9955D2D385"]
-			id: "1602305896901F42"
-			tasks: [{
-				advancement: "candlelight:main/cook_tomato_mozzarella_salad"
-				criterion: ""
-				id: "0E7DD2DE36279F68"
-				type: "advancement"
-			}]
-			x: -9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2830BE9955D2D385"]
-			id: "608B3CE29A70107D"
-			tasks: [{
-				advancement: "candlelight:main/place_chocolate_mousse"
-				criterion: ""
-				id: "32600C5DED2EBDA6"
-				type: "advancement"
-			}]
-			x: -9.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["2A342DE7E210B697"]
-			id: "7380034CFB6096B2"
-			tasks: [{
-				advancement: "candlelight:main/place_tablesign"
-				criterion: ""
-				id: "28FE6EC2012CCDD7"
-				type: "advancement"
-			}]
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7380034CFB6096B2"]
-			id: "62057DC7CD475BFF"
-			tasks: [{
-				advancement: "candlelight:main/write_letter"
-				criterion: ""
-				id: "6F2F8022D4A38D59"
-				type: "advancement"
-			}]
-			x: -7.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["62057DC7CD475BFF"]
-			id: "03108BE7F137A26C"
-			tasks: [{
-				advancement: "candlelight:main/place_typewriter"
-				criterion: ""
-				id: "50B32B88CE274C92"
-				type: "advancement"
-			}]
-			x: -9.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7380034CFB6096B2"]
-			id: "3FD7E1D1FE4A7C7A"
-			tasks: [{
-				advancement: "candlelight:main/find_rose"
-				criterion: ""
-				id: "099B799D8EAF8AB1"
-				type: "advancement"
-			}]
-			x: -7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6BD1BE1348487705"]
-			id: "3C1CCD16183F61E3"
-			tasks: [{
-				advancement: "candlelight:main/eat_enchanted_golden_apple_from_plate"
-				criterion: ""
-				id: "3FE24A6C6F2F8126"
-				type: "advancement"
-			}]
-			x: -11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3FD7E1D1FE4A7C7A"]
-			id: "6BD1BE1348487705"
-			tasks: [{
-				advancement: "candlelight:main/place_table"
-				criterion: ""
-				id: "71885397A3824B36"
-				type: "advancement"
-			}]
-			x: -9.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2A342DE7E210B697"]
-			id: "324283F8C58284D5"
-			tasks: [{
-				advancement: "candlelight:main/place_cooking_pan"
-				criterion: ""
-				id: "5B4C465F0ED67A3D"
-				type: "advancement"
-			}]
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			id: "53518CE816156ABB"
-			tasks: [{
-				advancement: "bakery:main/get_yeast"
-				criterion: ""
-				id: "6D3CD9521BEB22C6"
-				type: "advancement"
+				id: "794FC41B41AD1F23"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:tools/knife)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["53518CE816156ABB"]
-			id: "5DEA06B9651BE1C3"
-			tasks: [{
-				advancement: "bakery:main/place_stove"
-				criterion: ""
-				id: "2CE8AA2BD56D2915"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["53518CE816156ABB"]
-			id: "251BB24297FB6E46"
-			tasks: [{
-				advancement: "bakery:main/get_everything"
-				criterion: ""
-				id: "3473DF4B1CCE193B"
-				type: "advancement"
-			}]
-			x: -2.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["53518CE816156ABB"]
-			id: "46BB0B6E20651092"
-			tasks: [{
-				advancement: "bakery:main/place_baker_station"
-				criterion: ""
-				id: "008BBB5979516925"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["46BB0B6E20651092"]
-			id: "16CE67A065D1A4C5"
-			tasks: [{
-				advancement: "bakery:main/get_all_cakes"
-				criterion: ""
-				id: "4BC4770ADE693BAE"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["16CE67A065D1A4C5"]
-			id: "686C6701A85E1BA7"
-			tasks: [{
-				advancement: "bakery:main/cut_strawberry_cake"
-				criterion: ""
-				id: "348C4CC8408292AB"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["46BB0B6E20651092"]
-			id: "03AC3C8EA4137457"
-			tasks: [{
-				advancement: "bakery:main/get_all_caked_goods"
-				criterion: ""
-				id: "426336818822EC68"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["5DEA06B9651BE1C3"]
-			id: "1B1AF2613A7831F6"
-			tasks: [{
-				advancement: "bakery:main/get_misslilitu_biscuit"
-				criterion: ""
-				id: "4366E529BE00724A"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["5DEA06B9651BE1C3"]
-			id: "2DDDB8250B886405"
-			tasks: [{
-				advancement: "bakery:main/eat_bread"
-				criterion: ""
-				id: "2560A987C5E1ABE1"
-				type: "advancement"
-			}]
-			x: -2.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["2DDDB8250B886405"]
-			id: "47C872186E1370D6"
-			tasks: [{
-				advancement: "bakery:main/place_bread_crate"
-				criterion: ""
-				id: "016BA276C1FD2009"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["2DDDB8250B886405"]
-			id: "706A6D1D08E71A84"
-			tasks: [{
-				advancement: "bakery:main/get_all_baked_goods"
-				criterion: ""
-				id: "0F402923B08AF6EA"
-				type: "advancement"
-			}]
-			x: -2.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["47C872186E1370D6"]
-			id: "20AEED5499403854"
-			tasks: [{
-				advancement: "bakery:main/eat_sandwich"
-				criterion: ""
-				id: "34047AD3C93418E9"
-				type: "advancement"
-			}]
-			x: -4.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["5DEA06B9651BE1C3"]
-			id: "7B9C096B066ECB97"
-			tasks: [{
-				advancement: "bakery:main/place_cooking_pot"
-				criterion: ""
-				id: "696B74E53A1FFF2D"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["7B9C096B066ECB97"]
-			id: "04EBD93A4F27884C"
-			tasks: [{
-				advancement: "bakery:main/eat_pudding"
-				criterion: ""
-				id: "672B4B189632B14A"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["7B9C096B066ECB97"]
-			id: "55A1A94ED911B11B"
-			tasks: [{
-				advancement: "bakery:main/get_all_jams"
-				criterion: ""
-				id: "7D33E0DC99849F27"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			id: "0765650012E7378D"
-			tasks: [{
-				advancement: "vinery:main/fruits_of_the_field"
-				criterion: ""
-				id: "37D746F9F7B48E58"
-				type: "advancement"
-			}]
-			x: 13.0d
-			y: 12.0d
-		}
-		{
-			id: "25875BCF50B106AA"
-			tasks: [{
-				advancement: "vinery:main/juice_it_up"
-				criterion: ""
-				id: "76513C95A1BB725D"
-				type: "advancement"
-			}]
-			x: 13.0d
-			y: 8.0d
-		}
-		{
-			id: "1FD164D621C9734D"
-			tasks: [{
-				advancement: "vinery:main/wild_harvest"
-				criterion: ""
-				id: "198544D687F76C0E"
-				type: "advancement"
-			}]
-			x: 13.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["0765650012E7378D"]
-			id: "173570C5478735A9"
-			tasks: [{
-				advancement: "vinery:main/cherry_picker"
-				criterion: ""
-				id: "1BCC4DA18BEF8B79"
-				type: "advancement"
-			}]
-			x: 13.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["0765650012E7378D"]
-			id: "6E2CAD523F03F512"
-			tasks: [{
-				advancement: "vinery:main/forbidden_fruit"
-				criterion: ""
-				id: "5483A9E11F6E872A"
-				type: "advancement"
-			}]
-			x: 15.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["25875BCF50B106AA"]
-			id: "3206CC467EEF0B09"
-			tasks: [{
-				advancement: "vinery:main/juicy_success"
-				criterion: ""
-				id: "18B9A6DC8494190C"
-				type: "advancement"
-			}]
-			x: 13.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["1FD164D621C9734D"]
-			id: "7F02D719986B19DB"
-			tasks: [{
-				advancement: "vinery:main/overgrown_lattices"
-				criterion: ""
-				id: "4E5C88A259697F3A"
-				type: "advancement"
-			}]
-			x: 15.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1FD164D621C9734D"]
-			id: "0DDC6D60F01A22FA"
-			tasks: [{
-				advancement: "vinery:main/vineyard_visionary"
-				criterion: ""
-				id: "7D1AF82934CB5BCB"
-				type: "advancement"
-			}]
-			x: 15.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["1FD164D621C9734D"]
-			id: "342372C507A15481"
-			tasks: [{
-				advancement: "vinery:main/sowing_the_future"
-				criterion: ""
-				id: "3B50599DD253D03E"
-				type: "advancement"
-			}]
-			x: 15.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["6E2CAD523F03F512"]
-			id: "7186B5CFAE20B145"
-			tasks: [{
-				advancement: "vinery:main/the_first_press"
-				criterion: ""
-				id: "3A2B67D4D04C33B2"
-				type: "advancement"
-			}]
-			x: 17.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["25875BCF50B106AA"]
-			id: "78C07CBD72EABEE4"
-			tasks: [{
-				advancement: "vinery:main/the_magic_of_the_barrel"
-				criterion: ""
-				id: "6D9104E916BB80C8"
-				type: "advancement"
-			}]
-			x: 15.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["3206CC467EEF0B09"]
-			id: "7DFF96123498894D"
-			tasks: [{
-				advancement: "vinery:main/nectar_of_life"
-				criterion: ""
-				id: "62DBA796F45F97C7"
-				type: "advancement"
-			}]
-			x: 15.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["7F02D719986B19DB"]
-			id: "7C33CED5947EE34E"
-			tasks: [{
-				advancement: "vinery:main/budding_grapes"
-				criterion: ""
-				id: "438D5D55E6D0675F"
-				type: "advancement"
-			}]
-			x: 17.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["342372C507A15481"]
-			id: "7E3D06E737BD7493"
-			tasks: [{
-				advancement: "vinery:main/grape_picker"
-				criterion: ""
-				id: "533767A1872EABB8"
-				type: "advancement"
-			}]
-			x: 17.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["7186B5CFAE20B145"]
-			id: "4BFCE0CB86E9755B"
-			tasks: [{
-				advancement: "vinery:main/mashy_success"
-				criterion: ""
-				id: "21E25BE72E631424"
-				type: "advancement"
-			}]
-			x: 19.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["7186B5CFAE20B145"]
-			id: "5A04A9273F0EDC37"
-			tasks: [{
-				advancement: "vinery:main/purely_apple"
-				criterion: ""
-				id: "6E32EF28631DFDE4"
-				type: "advancement"
-			}]
-			x: 19.0d
-			y: 16.0d
-		}
-		{
-			dependencies: ["78C07CBD72EABEE4"]
-			id: "5AA004D52AF6EB63"
-			tasks: [{
-				advancement: "vinery:main/the_noble_drop"
-				criterion: ""
-				id: "5E49B7728E21DBA4"
-				type: "advancement"
-			}]
-			x: 17.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["5AA004D52AF6EB63"]
-			id: "59C2820E3CFCF7C9"
-			tasks: [{
-				advancement: "vinery:main/vintage_perfection"
-				criterion: ""
-				id: "3D88982512966B40"
-				type: "advancement"
-			}]
-			x: 19.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["5AA004D52AF6EB63"]
-			id: "1370F161F5106DBB"
-			tasks: [{
-				advancement: "vinery:main/wine_somelier"
-				criterion: ""
-				id: "52C881B03AE7BF31"
-				type: "advancement"
-			}]
-			x: 19.0d
-			y: 12.0d
+			y: -12.0d
 		}
 	]
 }

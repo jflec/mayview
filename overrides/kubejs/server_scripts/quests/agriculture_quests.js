@@ -1,7 +1,7 @@
 function PlantSixteenCrops() {
   const TASK_ID = "410D515B16A65B06";
   const REQUIRED = 16;
-  const PLANTED_TAG = "c:planted_crops";
+  const PLANTED_TAG = "mayview:crops";
 
   FTBQuestsEvents.customTask(TASK_ID, (event) => {
     event.maxProgress = REQUIRED;

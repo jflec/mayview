@@ -10,6 +10,7 @@ const STONE_CARE_PACKAGE_ITEM_IDS = [
   "minecraft:diorite",
   "minecraft:cobblestone",
   "minecraft:stone",
+  "ae2:sky_stone_block",
 ];
 
 BlockEvents.rightClicked(STONE_CARE_PACKAGE_BLOCK_ID, (event) => {

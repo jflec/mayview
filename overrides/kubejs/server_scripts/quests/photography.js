@@ -181,7 +181,7 @@ PlayerEvents.inventoryChanged(function (event) {
   frames.forEach(function (frame) {
     quests.forEach(function (q) {
       if (frameMatches(frame, q)) {
-        server.complete(q.id);
+        server.addProgress(q.id, 1);
       }
     });
   });
