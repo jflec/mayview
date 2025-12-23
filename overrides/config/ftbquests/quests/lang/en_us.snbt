@@ -396,6 +396,7 @@
 	]
 	quest.33056A7DC8116FA9.quest_subtitle: "The key ingredient for enchanting items beyond their limits."
 	quest.3349CCFEF4645049.quest_subtitle: "Be careful of scams!"
+	quest.3349CCFEF4645049.title: "What a deal!"
 	quest.3358F20C6F1230D8.quest_subtitle: "Now with HDR support!"
 	quest.340B003A83ADB44C.quest_desc: [
 		"&6Accumulators&r are multi-block structures that store large amounts of electric energy."
@@ -456,6 +457,9 @@
 	quest.3754912EE2F26E59.quest_subtitle: "Generates 512x Stress Units."
 	quest.37A9231339223971.quest_subtitle: "Snacks attract Pokemon based on the berries used."
 	quest.38A5B64A88EC9FFB.quest_subtitle: "Sprouts may drop occasionally when harvesting Apricorns."
+	quest.3A0FD4157BF8D9E9.quest_desc: ["I swear they all look alike.  They seem to like working with the healing machines from Cobblemon"]
+	quest.3A0FD4157BF8D9E9.quest_subtitle: "Cobblemon Nurse"
+	quest.3A0FD4157BF8D9E9.title: "Nurse Joy?"
 	quest.3A41BC8707C797D1.quest_desc: [
 		"&6Mechanical Pumps&r can be crafted with:"
 		""
@@ -538,6 +542,9 @@
 	quest.44356AC8AA3B740C.quest_subtitle: "A Water-type Gym Leader's best friend!"
 	quest.450BA3B1EFF84030.quest_subtitle: "You'll need some Nether Quartz!"
 	quest.4548DBB9FBF8F786.quest_subtitle: "You can skip this one I won't judge you."
+	quest.459965B8A62AFB24.quest_desc: ["Ran into a wandering winemaker. Asked me for some coins and in return they'd give me some fruit saplings"]
+	quest.459965B8A62AFB24.quest_subtitle: "Winemaker"
+	quest.459965B8A62AFB24.title: "A wandering... winemaker?"
 	quest.45BE08225DC1B151.quest_subtitle: "Rise, my friends!"
 	quest.468C8AB81E23D5CA.quest_subtitle: "Tastes yummy!"
 	quest.47E665AFF341A50C.quest_desc: [
@@ -728,6 +735,12 @@
 	quest.5A23CB31E4C37B54.quest_subtitle: "You don’t need to ask strangers to hold the camera!"
 	quest.5B83A95716BA6574.quest_subtitle: "Light up your space!"
 	quest.5B941D762908023B.quest_subtitle: "Use a Mushroom and Dirt!"
+	quest.5BB9DE133BA40DDC.quest_desc: [
+		"Ever felt like selling shrooms?  The Forager will gladly exchange them for some coin."
+		""
+		"Place the Forager's Table and have a villager take up the job"
+	]
+	quest.5BB9DE133BA40DDC.quest_subtitle: "Forager"
 	quest.5BD0023532DDEEF8.quest_desc: [
 		"&6Brass Ingots&r can be created in a &bBasin&r with a &bMixer&r and &bBlaze Burner&r using:"
 		""
@@ -809,6 +822,15 @@
 	quest.62F208B170CCE457.quest_subtitle: "The cornerstone of early-game automation."
 	quest.62F208B170CCE457.title: "Craft an Andesite Casing"
 	quest.63B065D82F747B11.quest_subtitle: "Tastes like a battery."
+	quest.63BF10D7CF72D879.quest_desc: [
+		"Haven't seen any meteorites crashing down in Mayview.  "
+		""
+		"Some of the old tech has been procured elsewhere. Rumor is, the presses are available for trade."
+		""
+		"Place an AE2 charger near a villager and start trading with that Fluix Researcher"
+	]
+	quest.63BF10D7CF72D879.quest_subtitle: "Fluix Researcher"
+	quest.63BF10D7CF72D879.title: "Where do I get the presses?"
 	quest.643FD075003B1EF9.quest_subtitle: "They grow in dirt caves!"
 	quest.65257DBB7C0A1D94.quest_subtitle: "Gotta Catch 'Em All!"
 	quest.65AE38473D6A6138.quest_desc: [
@@ -932,6 +954,15 @@
 	quest.767B9D7EBAF4CB15.quest_subtitle: "Safe travels little guy!"
 	quest.7782F115C09E2489.quest_subtitle: "Peak performance."
 	quest.790B04322045AEBC.quest_subtitle: "There are fifteen!"
+	quest.791262F515B74A18.quest_desc: [
+		"Spruce up your garden with some hanging pots"
+		""
+		"The Botanist sells various Beautify goodies"
+		""
+		"Place a Botanist Workbench and start collecting all the flowers!"
+	]
+	quest.791262F515B74A18.quest_subtitle: "Botanist"
+	quest.791262F515B74A18.title: "Flower Town"
 	quest.79264DBB440336BB.quest_desc: [
 		"When the air stream of an &bEncased Fan&r passes through certain blocks, the downstream air stream applies the corresponding processing to items."
 		""
@@ -997,6 +1028,7 @@
 	task.00993145D272A9D5.title: "Catch Your First Pokémon"
 	task.00B429D42B7118DC.title: "Craft a Large Cogwheel"
 	task.00D3BD93F808D16C.title: "&6Observe an active Hose Pulley&r"
+	task.0106E33E661FE31D.title: "Nurse Joy Trade"
 	task.01725D9FB77426C7.title: "Craft All of the Ancient Balls"
 	task.018E7A17A7B725F9.title: "Craft an Andesite Funnel"
 	task.026950B9D4DD5340.title: "Unlock &6Slice and Dice"
@@ -1066,6 +1098,7 @@
 	task.18974A3BCE3BA808.title: "Craft All of the Basic Colored Poké Balls"
 	task.18A2D4033FED5C56.title: "Craft a Daily Shop"
 	task.1912024EBF355D68.title: "Unknown type: cobblemon_tasks:cobblemon_task"
+	task.1928FF50191CA43A.title: "Fluix Researcher Trade"
 	task.1947DEBD8B5D15DD.title: "Craft a Poké Ball Lid"
 	task.1979C82263168C6A.title: "Use an Exp. Candy"
 	task.1A2A52911CD36679.title: "Max a Pokémon’s Ride Stats"
@@ -1099,6 +1132,7 @@
 	task.21E8F1FD41A5E227.title: "Any #sophisticatedbackpacks:upgrade"
 	task.22B83788BEFCB70B.title: "Another Furniture"
 	task.22CF2317D7DC7E06.title: "&6Travel 5000x Blocks While Sitting in a Seat&r"
+	task.22E8C7218814C503.title: "Winemaker Trade"
 	task.230A94BF343E681F.title: "Use an XP Candy"
 	task.2317F6F64DA63066.title: "Craft a Brass Casing"
 	task.2365745C190E70C0.title: "&6Fill an item using a Spout&r"
@@ -1126,6 +1160,7 @@
 	task.2BD19CD247E536CA.title: "Craft 4x Rods"
 	task.2C31CDE1002A3546.title: "Craft a Large Water Wheel"
 	task.2C45A948A9282843.title: "Legendary Spawning"
+	task.2CD3B9CD78818F1F.title: "Master Cook"
 	task.2D2D4E72827754A7.title: "Craft a Lightroom"
 	task.2E3CBBB1EC6F4BE7.title: "Take a Picture of a Chicken"
 	task.2F6995CC821AA667.title: "Craft a Windmill Bearing"
@@ -1162,8 +1197,9 @@
 	task.3A9FEBE8D614D5DF.title: "Take a Picture of a Pig"
 	task.3AC9748FA269CE62.title: "&6Activate a Deployer&r"
 	task.3ACF0C9D35F137FD.title: "Any #artifacts:artifacts"
-	task.3B3B03D4157EC2FE.title: "Trade with a Villager"
 	task.3B41D818DF84EB96.title: "Craft a Calculation Processor"
+	task.3BC55B3302CB3D08.title: "Botanist Trade"
+	task.3C387A782E017575.title: "Cleric Trades"
 	task.3C3BF283D4478491.title: "Craft a Train Station"
 	task.3C60F2850844554F.title: "Craft a Train Signal"
 	task.3CA8F12E159B341E.title: "&6Assemble a Train with 6x Bogeys&r"
@@ -1217,6 +1253,7 @@
 	task.4E3CA3ECFE399590.title: "Craft 4x Fluid Pipes"
 	task.4E71C53FE6E60104.title: "Obtain and Plant an Apricorn Sprout"
 	task.4EBEC9319FBF12C2.title: "&6Commit Insurance Fraud&r"
+	task.4EF943B2B6B04A22.title: "Total Trade"
 	task.4F1B7FA5E678C166.title: "Any #accessories:all_curios_items"
 	task.4FE0C4AC52A33264.title: "Unknown type: cobblemon_tasks:cobblemon_task"
 	task.503692B77161B60A.title: "Craft a Cogwheel"
@@ -1273,6 +1310,7 @@
 	task.62B9E75A3F1A0B1A.title: "Upgrade to a Gold Backpack"
 	task.62DC0F7D4835B33D.title: "Upgrade to a Gold Backpack"
 	task.63BB140A5D75C9D8.title: "Craft any Full Storage Drawer"
+	task.64F13BC1182CDDE4.title: "Trade with a villager"
 	task.65AE9C89046D3367.title: "Obtain a Zinc Ingot"
 	task.65B39A3E197A8F24.title: "Any #aquaculture:hook"
 	task.6690DAFA9ABAC0CB.title: "Craft a Gearbox"
@@ -1312,6 +1350,7 @@
 	task.71CF4AB4BABA1427.title: "Craft a Backpack"
 	task.71E33A622FEDED0C.title: "Need Help?"
 	task.7201E081142C7210.title: "Craft a Certus Quartz Crystal"
+	task.720BE724B1C84A7A.title: "Chef"
 	task.72536B338A3536C6.title: "Craft a Bench"
 	task.72C024FE665C7325.title: "Take a Picture of Yourself in the Overworld"
 	task.732C06B3113843F4.title: "Obtain a Chipped Budding Certus Quartz Block"
@@ -1328,6 +1367,7 @@
 	task.75D2C56F68C8D0CA.title: "Craft a Furniture Hammer"
 	task.75EDF15FCBA68601.title: "Craft a Charger"
 	task.760D8E64D384874F.title: "Evolve a Pokémon"
+	task.76306A023C944B9E.title: "Forager Trade"
 	task.767E3B445A19EDA4.title: "Any #c:dyes"
 	task.768B45FB712D39C9.title: "Any #brewinandchewin:fermented_drinks"
 	task.770A118D2C1B642B.title: "Craft Your First Hoe"
@@ -1352,6 +1392,7 @@
 	task.7CAE7DB490B08EB4.title: "&6The Horror&r"
 	task.7CE72DA7861680C9.title: "Craft a Lamp"
 	task.7CF52FF14E537A87.title: "Craft a Wrench"
+	task.7D010A4A8C1303F2.title: "fluix"
 	task.7D3038580E9D651B.title: "Obtain a Brass Ingot"
 	task.7D3F70682802E3D9.title: "&6Process materials with an Encased Fan&r"
 	task.7DBFDCFCA3AFB1FB.title: "Craft a Knife"

@@ -123,28 +123,30 @@
 		}
 		{
 			dependencies: ["2E5866CA79AB274A"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "2B6DD29FB1207A45"
 			tasks: [{
 				id: "3A7F4EC78B493398"
 				item: { count: 1, id: "mayview:piggy_bank" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2E5866CA79AB274A"]
 			id: "3349CCFEF4645049"
 			tasks: [{
-				advancement: "minecraft:adventure/trade"
-				criterion: ""
-				icon: {
-					id: "minecraft:villager_spawn_egg"
-				}
-				id: "3B3B03D4157EC2FE"
-				type: "advancement"
+				id: "64F13BC1182CDDE4"
+				profession_dropdown: "minecraft:none"
+				profession_manual: "minecraft:librarian"
+				required: 1
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: true
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -170,6 +172,144 @@
 			}]
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["3349CCFEF4645049"]
+			hide_until_deps_complete: true
+			id: "63BF10D7CF72D879"
+			tasks: [{
+				icon: {
+					id: "ae2:engineering_processor_press"
+				}
+				id: "1928FF50191CA43A"
+				profession_dropdown: "ae2:fluix_researcher"
+				profession_manual: "minecraft:librarian"
+				required: 20
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3349CCFEF4645049"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "biomeswevegone:flower_patch"
+			}
+			id: "791262F515B74A18"
+			tasks: [{
+				icon: {
+					id: "beautify:botanist_workbench"
+				}
+				id: "3BC55B3302CB3D08"
+				profession_dropdown: "beautify:botanist"
+				profession_manual: "minecraft:librarian"
+				required: 10
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3349CCFEF4645049"]
+			hide_until_deps_complete: true
+			id: "5BB9DE133BA40DDC"
+			tasks: [{
+				icon: {
+					id: "biomeswevegone:foragers_table"
+				}
+				id: "76306A023C944B9E"
+				profession_dropdown: "biomeswevegone:forager"
+				profession_manual: "minecraft:librarian"
+				required: 10
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3349CCFEF4645049"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "farmersdelight:chicken_soup"
+			}
+			id: "5FC2C700B13FCBF9"
+			tasks: [{
+				icon: {
+					id: "farmersdelight:skillet"
+				}
+				id: "2CD3B9CD78818F1F"
+				profession_dropdown: "chefsdelight:cook"
+				profession_manual: "minecraft:librarian"
+				required: 10
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5FC2C700B13FCBF9"]
+			id: "7BEBAF917FFD2694"
+			tasks: [{
+				icon: {
+					id: "farmersdelight:roast_chicken_block"
+				}
+				id: "720BE724B1C84A7A"
+				profession_dropdown: "chefsdelight:chef"
+				profession_manual: "minecraft:librarian"
+				required: 10
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3349CCFEF4645049"]
+			hide_until_deps_complete: true
+			id: "3A0FD4157BF8D9E9"
+			tasks: [{
+				icon: {
+					id: "cobblemon:healing_machine"
+				}
+				id: "0106E33E661FE31D"
+				profession_dropdown: "cobblemon:nurse"
+				profession_manual: "minecraft:librarian"
+				required: 10
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3349CCFEF4645049"]
+			hide_until_deps_complete: true
+			id: "459965B8A62AFB24"
+			tasks: [{
+				icon: {
+					id: "vinery:apple_wine"
+				}
+				id: "22E8C7218814C503"
+				profession_dropdown: "vinery:winemaker"
+				profession_manual: "minecraft:librarian"
+				required: 10
+				type: "questeventbridge:trade_task"
+				use_dropdown: true
+				use_total: false
+			}]
+			x: -2.0d
+			y: 2.0d
 		}
 	]
 }
